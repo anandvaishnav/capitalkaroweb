@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<?php include '_data/data.php'; ?>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loanlift || Blog</title>
+    <title><?php echo $site_name; ?> || Blog</title>
     <?php
    include '_inc/skin.php';
    ?>
@@ -28,8 +28,8 @@
                 <h2>Blog Standard</h2>
             </div>
             <ul class="bradcrumb">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="blog.html">Blog </a></li>
+                <li><a href="index">Home</a></li>
+                <li><a href="blog">Blog </a></li>
                 <li><a href="#">Blog Standard </a></li>
             </ul>
         </div>
@@ -43,7 +43,7 @@
                     <div class="blog-block">
                         <div class="blog-list-item">
                             <div class="blog-image">
-                                <a href="blog-details.html">
+                                <a href="blog-details">
                                     <img src="assets/images/blog/blog-standard-image-1.jpg" alt="blog-image"></a>
                             </div>
                             <div class="blog-item-tagline">
@@ -58,7 +58,7 @@
                                 <p>Learn the essentials of obtaining your first loan, from understanding credit scores
                                     to choosing the right lender. This guide helps first-time borrowers make informed
                                     financial decisions.</p>
-                                <a href="blog-details.html" class="btn-link"><span>continue reading </span><i
+                                <a href="blog-details" class="btn-link"><span>continue reading </span><i
                                         class="flaticon-next"></i></a>
                             </div>
                         </div>
@@ -66,7 +66,7 @@
                     <div class="blog-block">
                         <div class="blog-list-item">
                             <div class="blog-image">
-                                <a href="blog-details.html">
+                                <a href="blog-details">
                                     <img src="assets/images/blog/blog-standard-image-2.jpg" alt="blog-image"></a>
                             </div>
                             <div class="blog-item-tagline">
@@ -80,7 +80,7 @@
                                 <h3><a href="#">How to Improve Your Credit Score Before Applying for a Loan</a></h3>
                                 <p>A good credit score is crucial for loan approval. Discover actionable steps to boost
                                     your credit, ensuring better loan terms and higher chances of approval.</p>
-                                <a href="blog-details.html" class="btn-link"><span>continue reading </span><i
+                                <a href="blog-details" class="btn-link"><span>continue reading </span><i
                                         class="flaticon-next"></i></a>
                             </div>
                         </div>
@@ -88,7 +88,7 @@
                     <div class="blog-block">
                         <div class="blog-list-item">
                             <div class="blog-image">
-                                <a href="blog-details.html">
+                                <a href="blog-details">
                                     <img src="assets/images/blog/blog-standard-image-3.jpg" alt="blog-image"></a>
                             </div>
                             <div class="blog-item-tagline">
@@ -103,7 +103,7 @@
                                 <p>Applying for a loan? Avoid these common mistakes that can lead to delays or
                                     rejections. Learn how to submit a flawless application for a smooth approval
                                     process.</p>
-                                <a href="blog-details.html" class="btn-link"><span>continue reading </span> <i
+                                <a href="blog-details" class="btn-link"><span>continue reading </span> <i
                                         class="flaticon-next"></i></a>
                             </div>
                         </div>
@@ -111,7 +111,7 @@
                     <div class="blog-block">
                         <div class="blog-list-item">
                             <div class="blog-image">
-                                <a href="blog-details.html">
+                                <a href="blog-details">
                                     <img src="assets/images/blog/blog-standard-image-4.jpg" alt="blog-image"></a>
                             </div>
                             <div class="blog-item-tagline">
@@ -126,7 +126,7 @@
                                 <p>Fixed and variable interest rates offer different advantages. Explore the pros and
                                     cons of each to determine which type best suits your financial situation and
                                     long-term goals.</p>
-                                <a href="blog-details.html" class="btn-link"><span>continue reading </span> <i
+                                <a href="blog-details" class="btn-link"><span>continue reading </span> <i
                                         class="flaticon-next"></i></a>
                             </div>
                         </div>
@@ -170,7 +170,7 @@
                                     <img src="assets/images/blog/blog-standard-image-5.jpg" alt="blog-image">
                                     <div class="recent-blog-widget-item-title">
                                         <span>September 20, 2023</span>
-                                        <a href="blog-details.html">Securing Your Dream Home: A Complete Guide to Home
+                                        <a href="blog-details">Securing Your Dream Home: A Complete Guide to Home
                                         </a>
                                     </div>
                                 </div>
@@ -178,7 +178,7 @@
                                     <img src="assets/images/blog/blog-standard-image-6.jpg" alt="blog-image">
                                     <div class="recent-blog-widget-item-title">
                                         <span>September 20, 2023</span>
-                                        <a href="blog-details.html">Fueling Business Growth: How to Choose the Right
+                                        <a href="blog-details">Fueling Business Growth: How to Choose the Right
                                             Business </a>
                                     </div>
                                 </div>
@@ -186,7 +186,7 @@
                                     <img src="assets/images/blog/blog-standard-image-7.jpg" alt="blog-image">
                                     <div class="recent-blog-widget-item-title">
                                         <span>September 20, 2023</span>
-                                        <a href="blog-details.html">Your Dream Wedding, Within reach Exploring Wedding
+                                        <a href="blog-details">Your Dream Wedding, Within reach Exploring Wedding
                                             Loan</a>
                                     </div>
                                 </div>
@@ -211,7 +211,7 @@
                                     <h3>Advisory Specialists Premier Loan </h3>
                                     <p class="lead"><a href="tel:+020-098-45611"><i class="flaticon-phone"></i>
                                             +020-098-456 11</a></p>
-                                    <a href="contact-us.html" class="btn btn-primary">Get Started <i
+                                    <a href="contact-us" class="btn btn-primary">Get Started <i
                                             class="flaticon-next"></i></a>
                                 </div>
                             </div>
@@ -232,7 +232,7 @@
                             combining creativity with tailored
                             business loan solutions.</h2>
                     </div>
-                    <a href="contact-us.html" class="btn btn-secondary">Contact us <i class="flaticon-next"></i></a>
+                    <a href="contact-us" class="btn btn-secondary">Contact us <i class="flaticon-next"></i></a>
                 </div>
                 <div class="col-md-3 col-sm-3 col-3">
                     <img src="assets/images/cta-Logo.png" alt="logo">

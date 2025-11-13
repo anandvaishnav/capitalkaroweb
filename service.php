@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+    <?php include_once '_data/data.php'; ?>
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loanlift || Service</title>
+    <title><?php echo $site_name; ?>  || Service</title>
     <?php
     include '_inc/skin.php';
     ?>
@@ -28,7 +29,7 @@
                 <h2>Our Services 1</h2>
             </div>
             <ul class="bradcrumb">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index">Home</a></li>
                 <li><a href="#">Our Services </a></li>
             </ul>
         </div>
@@ -62,7 +63,7 @@
                             <p>Personal loans offer flexible funding for various needs, from consolidating debt to
                                 covering unexpected expenses.</p>
                         </div>
-                        <a href="service-details.html" class="btn-link">Read More <i class="flaticon-next"></i></a>
+                        <a href="personal-loan" class="btn-link">Read More <i class="flaticon-next"></i></a>
                     </div>
                 </div>
                 <div class="col-xl-4 col-md-6">
@@ -79,7 +80,7 @@
                             <p>Business loans provide essential funding to grow your enterprise, manage cash flow, or
                                 invest in new opportunities.</p>
                         </div>
-                        <a href="service-details.html" class="btn-link">Read More <i class="flaticon-next"></i></a>
+                        <a href="business-loan" class="btn-link">Read More <i class="flaticon-next"></i></a>
                     </div>
                 </div>
                 <div class="col-xl-4 col-md-6">
@@ -96,7 +97,7 @@
                             <p>Mortgage loans provide financing needed to purchase a home, offering competitive rates &
                                 flexible repayment terms.</p>
                         </div>
-                        <a href="service-details.html" class="btn-link">Read More <i class="flaticon-next"></i></a>
+                        <a href="mortgage-loan" class="btn-link">Read More <i class="flaticon-next"></i></a>
                     </div>
                 </div>
                 <div class="col-xl-4 col-md-6">
@@ -113,7 +114,7 @@
                             <p>Emergency loans provide quick, essential funding to cover unexpected expenses, ensuring
                                 financial stability during crises.</p>
                         </div>
-                        <a href="service-details.html" class="btn-link">Read More <i class="flaticon-next"></i></a>
+                        <a href="emergency-loan" class="btn-link">Read More <i class="flaticon-next"></i></a>
                     </div>
                 </div>
                 <div class="col-xl-4 col-md-6">
@@ -130,7 +131,7 @@
                             <p>Student loans can help you achieve educational goals but plan carefully to manage
                                 repayment effectively.</p>
                         </div>
-                        <a href="service-details.html" class="btn-link">Read More <i class="flaticon-next"></i></a>
+                        <a href="student-loan" class="btn-link">Read More <i class="flaticon-next"></i></a>
                     </div>
                 </div>
                 <div class="col-xl-4 col-md-6">
@@ -147,7 +148,7 @@
                             <p>Personal loans offer flexible funding for various needs, from consolidating debt to
                                 covering unexpected expenses.</p>
                         </div>
-                        <a href="service-details.html" class="btn-link">Read More <i class="flaticon-next"></i></a>
+                        <a href="small-business-loan" class="btn-link">Read More <i class="flaticon-next"></i></a>
                     </div>
                 </div>
             </div>
@@ -252,95 +253,73 @@
                 <h2 class="heading-title wow fadeInUp animated animated">Discover Our Pricing Plans to Your Financial
                     Needs</h2>
             </div>
-            <div class="row gutter-y-40">
-                <div class="col-lg-4 col-md-6 p-0">
-                    <div class="pricing-one-item first">
-                        <div class="hedding">
-                            <i class="flaticon-clock"></i>
-                            <h3>Individual Plan</h3>
-                        </div>
-                        <ul class="services-list">
-                            <li> <i class="fa-solid fa-check"></i> 24/7 Support at Any Time</li>
-                            <li> <i class="fa-solid fa-check"></i>Orientation for Business</li>
-                            <li> <i class="fa-solid fa-xmark"></i>Quality & Customer Experience</li>
-                            <li> <i class="fa-solid fa-xmark"></i>Free Consultation Until Cooperation</li>
-                            <li> <i class="fa-solid fa-xmark"></i>Power And Predictive Dialing</li>
-                        </ul>
-                        <div class="pricing-box-lower">
-                            <div class="pricing">
-                                <h2>$299/</h2>
-                                <p>Per user/month <br> billed annually*</p>
-                            </div>
-                            <a href="#" class="btn btn-outline-secondary">Choose Package <i
-                                    class="flaticon-next"></i></a>
-                        </div>
+        <div class="row gutter-y-40">
+
+    <?php foreach ($pricing as $plan): ?>
+        <div class="col-lg-4 col-md-6 p-0">
+            <div class="pricing-one-item <?= $plan['class'] ?>">
+
+                <?php if (!empty($plan['popular'])): ?>
+                    <div class="popular-tag">
+                        <h6>POPULAR</h6>
                     </div>
+                <?php endif; ?>
+
+                <div class="hedding">
+                    <i class="<?= $plan['icon'] ?>"></i>
+                    <h3><?= $plan['title'] ?></h3>
                 </div>
-                <div class="col-lg-4 col-md-6 p-0">
-                    <div class="pricing-one-item popular">
-                        <div class="popular-tag">
-                            <h6>POPULAR</h6>
-                        </div>
-                        <div class="hedding">
-                            <i class="flaticon-growth"></i>
-                            <h3>Business Plan</h3>
-                        </div>
-                        <ul class="services-list">
-                            <li><i class="fa-solid fa-check"></i>24/7 Support at Any Time</li>
-                            <li><i class="fa-solid fa-check"></i>Orientation for Business</li>
-                            <li><i class="fa-solid fa-check"></i>Quality & Customer Experience</li>
-                            <li><i class="fa-solid fa-check"></i>Free Consultation Until Cooperation</li>
-                            <li><i class="fa-solid fa-check"></i>Power And Predictive Dialing</li>
-                        </ul>
-                        <div class="pricing-box-lower">
-                            <div class="pricing">
-                                <h2>$499/</h2>
-                                <p>Per user/month <br> billed annually*</p>
-                            </div>
-                            <a href="#" class="btn btn-outline-primary">Choose Package <i class="flaticon-next"></i></a>
-                        </div>
+
+                <ul class="services-list">
+                    <?php foreach ($plan['features'] as $i => $feature): ?>
+                        <li>
+                            <?php if ($plan['checks'][$i] == 1): ?>
+                                <i class="fa-solid fa-check"></i>
+                            <?php else: ?>
+                                <i class="fa-solid fa-xmark"></i>
+                            <?php endif; ?>
+                            <?= $feature ?>
+                        </li>
+                    <?php endforeach; ?>
+                </ul>
+
+                <div class="pricing-box-lower">
+                    <div class="pricing">
+                        <h2><?= $plan['price'] ?></h2>
+                        <p>Per user/month <br> billed annually*</p>
                     </div>
+
+                    <?php if (!empty($plan['popular'])): ?>
+                        <a href="#" class="btn btn-outline-primary">Choose Package <i class="flaticon-next"></i></a>
+                    <?php else: ?>
+                        <a href="#" class="btn btn-outline-secondary">Choose Package <i class="flaticon-next"></i></a>
+                    <?php endif; ?>
                 </div>
-                <div class="col-lg-4 col-md-6 p-0">
-                    <div class="pricing-one-item last">
-                        <div class="hedding">
-                            <i class="flaticon-clock"></i>
-                            <h3>Corporate Plan</h3>
-                        </div>
-                        <ul class="services-list">
-                            <li><i class="fa-solid fa-check"></i>24/7 Support at Any Time</li>
-                            <li><i class="fa-solid fa-check"></i>Orientation for Business</li>
-                            <li><i class="fa-solid fa-check"></i>Quality & Customer Experience</li>
-                            <li><i class="fa-solid fa-xmark"></i>Free Consultation Until Cooperation</li>
-                            <li><i class="fa-solid fa-xmark"></i>Power And Predictive Dialing</li>
-                        </ul>
-                        <div class="pricing-box-lower">
-                            <div class="pricing">
-                                <h2>$399/</h2>
-                                <p>Per user/month <br> billed annually*</p>
-                            </div>
-                            <a href="#" class="btn btn-outline-secondary">Choose Package <i
-                                    class="flaticon-next"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="pricing-lower">
-                        <div class="pricing-lower-inner">
-                            <i class="flaticon-free-trial"></i>
-                            <h5>Get 30 day free trial</h5>
-                        </div>
-                        <div class="pricing-lower-inner">
-                            <i class="flaticon-wallet"></i>
-                            <h5>No any hidden fees pay</h5>
-                        </div>
-                        <div class="pricing-lower-inner">
-                            <i class="flaticon-availability"></i>
-                            <h5>You can cancel anytime</h5>
-                        </div>
-                    </div>
-                </div>
+
             </div>
+        </div>
+    <?php endforeach; ?>
+
+    <!-- keep your bottom section same -->
+    <div class="col-12">
+        <div class="pricing-lower">
+            <div class="pricing-lower-inner">
+                <i class="flaticon-free-trial"></i>
+                <h5>Get 30 day free trial</h5>
+            </div>
+            <div class="pricing-lower-inner">
+                <i class="flaticon-wallet"></i>
+                <h5>No any hidden fees pay</h5>
+            </div>
+            <div class="pricing-lower-inner">
+                <i class="flaticon-availability"></i>
+                <h5>You can cancel anytime</h5>
+            </div>
+        </div>
+    </div>
+
+</div>
+
         </div>
     </div>
     <!-- pricing plan one end -->
@@ -354,7 +333,7 @@
                             combining creativity with tailored
                             business loan solutions.</h2>
                     </div>
-                    <a href="contact-us.html" class="btn btn-secondary">Contact us <i class="flaticon-next"></i></a>
+                    <a href="contact-us" class="btn btn-secondary">Contact us <i class="flaticon-next"></i></a>
                 </div>
                 <div class="col-md-3 col-sm-3 col-3">
                     <img src="assets/images/cta-Logo.png" alt="logo">

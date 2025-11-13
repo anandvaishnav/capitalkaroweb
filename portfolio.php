@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<?php include_once '_data/data.php'; ?>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loanlift || Portfolio</title>
+   <title><?php echo $site_name; ?> || Portfolio</title>
     <?php
   include '_inc/skin.php';
     ?>
@@ -28,7 +28,7 @@
                 <h2>Portfolio</h2>
             </div>
             <ul class="bradcrumb">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index">Home</a></li>
                 <li><a href="#">Portfolio </a></li>
             </ul>
         </div>
@@ -65,7 +65,7 @@
                     <div class="container">
                         <div class="row gutter-y-40 gutter-x-15">
                             <div class="col-lg-6 col-md-12 portfolio-item">
-                                <a href="portfolio-details.html" class="portfolio-one-item-inner">
+                                <a href="portfolio-details" class="portfolio-one-item-inner">
                                     <div class="portfolio-one-item-image">
                                         <img src="assets/images/protfolio/protfolio-image-1.jpg"
                                             alt="case-studies-image">
@@ -80,7 +80,7 @@
                                 </a>
                             </div>
                             <div class="col-lg-6 col-md-12 portfolio-item">
-                                <a href="portfolio-details.html" class="portfolio-one-item-inner">
+                                <a href="portfolio-details" class="portfolio-one-item-inner">
                                     <div class="portfolio-one-item-image">
                                         <img src="assets/images/protfolio/protfolio-image-5.jpg"
                                             alt="case-studies-image">
@@ -101,7 +101,7 @@
                     <div class="container">
                         <div class="row gutter-y-40 gutter-x-15">
                             <div class="col-lg-6 col-md-12 portfolio-item">
-                                <a href="portfolio-details.html" class="portfolio-one-item-inner">
+                                <a href="portfolio-details" class="portfolio-one-item-inner">
                                     <div class="portfolio-one-item-image">
                                         <img src="assets/images/case/case-study-two-1.jpg" alt="case-studies-image">
                                     </div>
@@ -121,7 +121,7 @@
                     <div class="container">
                         <div class="row gutter-y-40 gutter-x-15">
                             <div class="col-lg-6 col-md-12 portfolio-item">
-                                <a href="portfolio-details.html" class="portfolio-one-item-inner">
+                                <a href="portfolio-details" class="portfolio-one-item-inner">
                                     <div class="portfolio-one-item-image">
                                         <img src="assets/images/protfolio/protfolio-image-2.jpg"
                                             alt="case-studies-image">
@@ -136,7 +136,7 @@
                                 </a>
                             </div>
                             <div class="col-lg-6 col-md-12 portfolio-item">
-                                <a href="portfolio-details.html" class="portfolio-one-item-inner">
+                                <a href="portfolio-details" class="portfolio-one-item-inner">
                                     <div class="portfolio-one-item-image">
                                         <img src="assets/images/protfolio/protfolio-image-4.jpg"
                                             alt="case-studies-image">
@@ -157,7 +157,7 @@
                     <div class="container">
                         <div class="row gutter-y-40 gutter-x-15">
                             <div class="col-lg-6 col-md-12 portfolio-item">
-                                <a href="portfolio-details.html" class="portfolio-one-item-inner">
+                                <a href="portfolio-details" class="portfolio-one-item-inner">
                                     <div class="portfolio-one-item-image">
                                         <img src="assets/images/protfolio/protfolio-image-3.jpg"
                                             alt="case-studies-image">
@@ -188,7 +188,7 @@
                             combining creativity with tailored
                             business loan solutions.</h2>
                     </div>
-                    <a href="contact-us.html" class="btn btn-secondary">Contact us <i class="flaticon-next"></i></a>
+                    <a href="contact-us" class="btn btn-secondary">Contact us <i class="flaticon-next"></i></a>
                 </div>
                 <div class="col-md-3 col-sm-3 col-3">
                     <img src="assets/images/cta-Logo.png" alt="logo">

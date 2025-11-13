@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<?php include_once '_data/data.php'; ?>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loanlift || Blog Details</title>
+    <title><?php echo $site_name; ?> || Blog Details</title>
     <?php
     include '_inc/skin.php';
     ?>
@@ -30,8 +30,8 @@
                         <h2>A Beginner’s Guide to Securing Your First Loan</h2>
                     </div>
                     <ul class="bradcrumb">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="blog.html">Blog </a></li>
+                        <li><a href="index">Home</a></li>
+                        <li><a href="blog">Blog </a></li>
                         <li><a href="#">Blog Details</a></li>
                     </ul>
                 </div>
@@ -276,7 +276,7 @@
                                     <p class="lead"><a href="tel:+020-098-45611"><i class="flaticon-phone"></i>
                                             +020-098-456 11</a>
                                     </p>
-                                    <a href="contact-us.html" class="btn btn-primary">Get Started <i
+                                    <a href="contact-us" class="btn btn-primary">Get Started <i
                                             class="flaticon-next"></i></a>
                                 </div>
                             </div>
@@ -297,7 +297,7 @@
                             combining creativity with tailored
                             business loan solutions.</h2>
                     </div>
-                    <a href="contact-us.html" class="btn btn-secondary">Contact us <i class="flaticon-next"></i></a>
+                    <a href="contact-us" class="btn btn-secondary">Contact us <i class="flaticon-next"></i></a>
                 </div>
                 <div class="col-md-3 col-sm-3 col-3">
                     <img src="assets/images/cta-Logo.png" alt="logo">

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<?php include_once '_data/data.php'; ?>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loanlift || Portfolio Details</title>
+    <title><?php echo $site_name; ?> || Portfolio Details</title>
     <?php
     include '_inc/skin.php';
     ?>
@@ -28,8 +28,8 @@
                 <h2>Simplified Wedding Loan Process</h2>
             </div>
             <ul class="bradcrumb">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="portfolio.html">Portfolio </a></li>
+                <li><a href="index">Home</a></li>
+                <li><a href="portfolio">Portfolio </a></li>
                 <li><a href="#">Simplified Wedding loan Process</a></li>
             </ul>
         </div>
@@ -216,7 +216,7 @@
                                 <h4>Quick Funding Solutions</h4>
                                 <p>Small Business </p>
                             </div>
-                            <a href="portfolio-details.html" class="portfolio-btn" tabindex="-1"><i
+                            <a href="portfolio-details" class="portfolio-btn" tabindex="-1"><i
                                     class="flaticon-next"></i></a>
                         </div>
                     </div>
@@ -231,7 +231,7 @@
                                 <h4>Customer-Centric Lending</h4>
                                 <p>Client Focused</p>
                             </div>
-                            <a href="portfolio-details.html" class="portfolio-btn" tabindex="-1"><i
+                            <a href="portfolio-details" class="portfolio-btn" tabindex="-1"><i
                                     class="flaticon-next"></i></a>
                         </div>
                     </div>
@@ -246,7 +246,7 @@
                                 <h4>Efficient Loan Processing</h4>
                                 <p>Digital Loans</p>
                             </div>
-                            <a href="portfolio-details.html" class="portfolio-btn" tabindex="-1"><i
+                            <a href="portfolio-details" class="portfolio-btn" tabindex="-1"><i
                                     class="flaticon-next"></i></a>
                         </div>
                     </div>
@@ -265,7 +265,7 @@
                             combining creativity with tailored
                             business loan solutions.</h2>
                     </div>
-                    <a href="contact-us.html" class="btn btn-secondary">Contact us <i class="flaticon-next"></i></a>
+                    <a href="contact-us" class="btn btn-secondary">Contact us <i class="flaticon-next"></i></a>
                 </div>
                 <div class="col-md-3 col-sm-3 col-3">
                     <img src="assets/images/cta-Logo.png" alt="logo">

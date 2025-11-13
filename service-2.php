@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<?php include_once '_data/data.php'; ?>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loanlift || Service</title>
+    <title><?php echo $site_name; ?> || Service</title>
     <?php
     include '_inc/skin.php';
     ?>
@@ -28,7 +28,7 @@ include '_inc/header.php';
                 <h2>Our Services 2</h2>
             </div>
             <ul class="bradcrumb">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index">Home</a></li>
                 <li><a href="#">Our Services 2</a></li>
             </ul>
         </div>
@@ -125,7 +125,7 @@ include '_inc/header.php';
                         </div>
                     </div>
                     <div class="col-lg-5 col-md-12 text-start text-lg-end">
-                        <a href="service-2.html" class="btn btn-outline-secondary">Get Started <i
+                        <a href="service-2" class="btn btn-outline-secondary">Get Started <i
                                 class="flaticon-next"></i></a>
                     </div>
                 </div>
@@ -199,7 +199,7 @@ include '_inc/header.php';
                                     <li>Funds for any personal expenses</li>
                                     <li>Fast approval and immediate access</li>
                                 </ul>
-                                <a href="service-details.html" class="btn btn-outline-secondary">Explore Services <i
+                                <a href="service-details" class="btn btn-outline-secondary">Explore Services <i
                                         class="flaticon-next"></i></a>
                             </div>
                         </div>
@@ -242,7 +242,7 @@ include '_inc/header.php';
                                     <li>Choose terms that suit your needs</li>
                                     <li>Tailored loans to match your goals</li>
                                 </ul>
-                                <a href="service-details.html" class="btn btn-outline-secondary">Explore Services <i
+                                <a href="service-details" class="btn btn-outline-secondary">Explore Services <i
                                         class="flaticon-next"></i></a>
                             </div>
                         </div>
@@ -287,7 +287,7 @@ include '_inc/header.php';
                                     <li> Strengthen your financial foundation</li>
                                     <li>Choose a loan size that suits your needs</li>
                                 </ul>
-                                <a href="service-details.html" class="btn btn-outline-secondary">Explore Services <i
+                                <a href="service-details" class="btn btn-outline-secondary">Explore Services <i
                                         class="flaticon-next"></i></a>
                             </div>
                         </div>
@@ -330,7 +330,7 @@ include '_inc/header.php';
                                     <li>Borrow the amount that suits your needs</li>
                                     <li>Access funds without risking assets</li>
                                 </ul>
-                                <a href="service-details.html" class="btn btn-outline-secondary">Explore Services <i
+                                <a href="service-details" class="btn btn-outline-secondary">Explore Services <i
                                         class="flaticon-next"></i></a>
                             </div>
                         </div>
@@ -440,7 +440,7 @@ include '_inc/header.php';
                             combining creativity with tailored
                             business loan solutions.</h2>
                     </div>
-                    <a href="contact-us.html" class="btn btn-secondary">Contact us <i class="flaticon-next"></i></a>
+                    <a href="contact-us" class="btn btn-secondary">Contact us <i class="flaticon-next"></i></a>
                 </div>
                 <div class="col-md-3 col-sm-3 col-3">
                     <img src="assets/images/cta-Logo.png" alt="logo">

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<?php include_once '_data/data.php'; ?>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loanlift || Apply Loan</title>
+    <title><?php echo $site_name; ?> || Apply Loan</title>
     <?php
    include '_inc/skin.php';
    ?>
@@ -28,7 +28,7 @@
                 <h2>Apply Now</h2>
             </div>
             <ul class="bradcrumb">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index">Home</a></li>
                 <li><a href="#">Page </a></li>
                 <li><a href="#">Apply Now </a></li>
             </ul>
@@ -36,7 +36,7 @@
     </div>
     <!-- inner-page hero end -->
     <!-- apply-loan start  -->
-    <div class="apply-loan-section">
+    <div class="apply-loan-section" style="background-color:white;">
         <div class="container">
             <div class="heading-box">
                 <span class="heading-subtitle wow fadeInUp animated animated">🤝 CALCULATE YOU LOAN AMOUNT</span>

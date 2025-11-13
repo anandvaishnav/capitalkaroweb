@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loanlift || 404 </title>
+    <title>  404 </title>
     <?php
    include '_inc/skin.php';
     ?>

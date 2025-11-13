@@ -5,34 +5,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo $site_name; ?> || About</title>
-    <?php
-    include '_inc/skin.php';
-    ?>
+    <title><?php echo $site_name; ?> || Mortgage Loan</title>
+    <?php include '_inc/skin.php'; ?>
 </head>
 
 <body class="custom-cursor">
     <div class="custom-cursor-one"></div>
     <div class="custom-cursor-two"></div>
-     <?php
-    include '_inc/pre-loader.php';
-    ?>
+
+    <?php include '_inc/pre-loader.php'; ?>
     <?php include '_inc/header.php'; ?>
 
+    <!-- HERO -->
     <div class="inner-page-hero" style="background-image: url(assets/images/background/about-hero-bg.jpg);">
         <div class="container">
             <div class="hero-heading-title">
-                <h2>About Us</h2>
+                <h2>Mortgage Loan</h2>
             </div>
             <ul class="bradcrumb">
                 <li><a href="index">Home</a></li>
-                <li><a href="#">Page </a></li>
-                <li><a href="#">About Us </a></li>
+                <li><a href="#">Page</a></li>
+                <li><a href="#">Mortgage Loan</a></li>
             </ul>
         </div>
     </div>
 
-    <!-- ABOUT SECTION -->
+    <!-- ABOUT MORTGAGE LOAN -->
     <div class="about-four">
         <div class="about-four-shape-one-1">
             <img src="assets/images/shape/about-shape-1.png" alt="shape">
@@ -43,30 +41,35 @@
 
         <div class="container">
             <div class="row gutter-y-60">
+
                 <div class="col-xl-7 col-lg-10">
                     <div class="about-four-info">
+
                         <div class="heading-box">
-                            <span class="heading-subtitle wow fadeInUp animated">🤝 ABOUT CAPITAL KARO</span>
+                            <span class="heading-subtitle wow fadeInUp animated">🏡 MORTGAGE LOAN SERVICES</span>
                             <h2 class="heading-title wow fadeInUp animated">
-                                Empowering India’s Financial Entrepreneurs Since 2019
+                                Unlock the Value of Your Property With a Fast & Secure Mortgage Loan
                             </h2>
                         </div>
+
                         <div class="section-details">
                             <p>
-                                Capital Karo began its journey in 2019, working closely with offline partners and leading DSAs across India.
-                                After years of strong offline success, we took a major leap in 2024 by launching our digital platform — a complete
-                                loan sourcing and partner management ecosystem.
+                                A Mortgage Loan, also known as a Loan Against Property (LAP), allows you to leverage the
+                                value of your residential, commercial, or industrial property to secure a high-value loan.
+                                It is one of the best ways to meet large financial requirements like business expansion,
+                                education, medical expenses, or debt consolidation.
                             </p>
 
                             <p>
-                                Today, Capital Karo has successfully helped disburse over <strong>₹180+ crore</strong> in loans nationwide. With our
-                                Own Branding Program, we empower entrepreneurs to launch their own loan company under their brand name using our
-                                white-label CRM technology.
+                                With easy documentation, long tenure options, flexible EMIs, and attractive interest rates,
+                                Mortgage Loans provide reliable and affordable financial support without losing property
+                                ownership. Your property stays with you — you simply unlock its financial potential.
                             </p>
 
                             <p>
-                                More than <strong>200+ partners</strong> across India trust us to manage their DSA business, grow their network, and
-                                scale financially — all under the mission of making every Indian financially independent with their own brand.
+                                Whether you are a salaried individual, self-employed professional, or business owner, we
+                                help you access high-value mortgage funding from top banks and NBFCs with quick processing
+                                and full transparency.
                             </p>
                         </div>
 
@@ -74,7 +77,7 @@
                             <li>
                                 <i class="flaticon-call"></i>
                                 <div class="about-contact-four">
-                                    <h6>Call For Any Query</h6>
+                                    <h6>Need Help?</h6>
                                     <p>+91 9217164796</p>
                                 </div>
                             </li>
@@ -82,14 +85,17 @@
                             <li>
                                 <img src="assets/images/about/about-four-ceo.png" alt="ceo-image">
                                 <div class="about-contact-four">
-                                    <h6>Founder & CEO</h6>
-                                    <p>Capital Karo Team</p>
+                                    <h6>Mortgage Loan Desk</h6>
+                                    <p>Property Loan Experts</p>
                                 </div>
                                 <img src="assets/images/Sign.png" alt="sign">
                             </li>
                         </ul>
 
-                        <a href="contact-us" class="btn btn-outline-secondary">Contact us <i class="flaticon-next"></i></a>
+                        <a href="contact-us" class="btn btn-outline-secondary">
+                            Apply for Mortgage Loan <i class="flaticon-next"></i>
+                        </a>
+
                     </div>
                 </div>
 
@@ -100,15 +106,15 @@
                                 <img src="assets/images/about/about-four-imag-1.jpg" alt="about-image">
                             </div>
                         </div>
-                        <div class="col-sm-5 col-6 ">
+                        <div class="col-sm-5 col-6">
                             <div class="about-four-right">
                                 <div class="about-four-images">
                                     <img src="assets/images/about/about-four-image-2.jpg" alt="about-image">
                                 </div>
                                 <div class="about-experiences-box">
                                     <div class="about-four-shape"></div>
-                                    <h2>5+</h2>
-                                    <p>Years of Experience</p>
+                                    <h2>₹5Cr+</h2>
+                                    <p>Loan Value Available*</p>
                                 </div>
                             </div>
                         </div>
@@ -124,8 +130,8 @@
                         <div class="about-four-details">
                             <h4>Our Mission</h4>
                             <p>
-                                To empower individuals and businesses by providing seamless loan sourcing, white-label CRM technology, and
-                                digital tools that help financial partners grow under their own brand.
+                                To provide secure, transparent, and high-value mortgage loan solutions that help
+                                individuals and businesses meet their financial goals without compromise.
                             </p>
                         </div>
                     </div>
@@ -138,26 +144,26 @@
                             <i class="flaticon-targeting"></i>
                         </div>
                         <div class="about-four-details">
-                            <h4>Vision & Goal</h4>
+                            <h4>Our Vision</h4>
                             <p>
-                                To become India’s leading financial partner network — enabling entrepreneurs to launch, manage, and scale their
-                                loan business with world-class digital infrastructure.
+                                To become the trusted partner for property-backed financing in India — offering
+                                competitive rates, fast approvals, and complete peace of mind.
                             </p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Dedicated Team -->
+                <!-- Support -->
                 <div class="col-xl-4 col-lg-6">
                     <div class="about-four-box">
                         <div class="about-four-icon">
                             <i class="flaticon-active"></i>
                         </div>
                         <div class="about-four-details">
-                            <h4>Dedicated Support</h4>
+                            <h4>End-to-End Assistance</h4>
                             <p>
-                                Our technical and operational teams work closely with partners to ensure smooth onboarding, CRM setup,
-                                integration, and business support for long-term growth.
+                                From property valuation to loan disbursal — our experts guide you with honest advice
+                                and complete clarity throughout the entire process.
                             </p>
                         </div>
                     </div>
@@ -167,7 +173,7 @@
         </div>
     </div>
 
-    <!-- WHY CHOOSE SECTION -->
+    <!-- WHY CHOOSE MORTGAGE LOAN -->
     <section class="why-choose-section-one">
         <div class="why-choose-shape-one-1">
             <img src="assets/images/shape/why-choose-shape-1.png" alt="shape">
@@ -178,11 +184,13 @@
 
         <div class="container">
             <div class="row gutter-y-30">
+
                 <div class="col-xl-9 why-choose-left-one">
+
                     <div class="heading-box heading-white">
-                        <span class="heading-subtitle wow fadeInUp animated">🤝 WHY CHOOSE CAPITAL KARO</span>
+                        <span class="heading-subtitle wow fadeInUp animated">🏡 WHY CHOOSE US</span>
                         <h2 class="heading-title wow fadeInUp animated">
-                            Your trusted partner for digital loan sourcing, CRM technology, and financial business growth
+                            High-Value, Low-Interest & Hassle-Free Mortgage Loan Options
                         </h2>
                     </div>
 
@@ -195,11 +203,10 @@
                             <div class="why-choose-one-box">
                                 <div class="why-choose-box-one-title">
                                     <i class="flaticon-solution"></i>
-                                    <h4>White-Label CRM</h4>
+                                    <h4>High Loan Amount</h4>
                                 </div>
                                 <p>
-                                    Build your own financial brand with our ready-to-use CRM, complete with lead management, partner onboarding,
-                                    payout tracking, and more.
+                                    Get up to 70%-90% of your property market value as loan, depending on eligibility.
                                 </p>
                             </div>
                         </div>
@@ -208,10 +215,10 @@
                             <div class="why-choose-one-box">
                                 <div class="why-choose-box-one-title">
                                     <i class="flaticon-badge"></i>
-                                    <h4>Strong Network</h4>
+                                    <h4>Affordable Interest Rates</h4>
                                 </div>
                                 <p>
-                                    With 200+ partners and 50+ lending institutions, we provide a powerful ecosystem to grow your DSA business.
+                                    Mortgage loans come with significantly lower interest rates compared to unsecured loans.
                                 </p>
                             </div>
                         </div>
@@ -220,36 +227,37 @@
                             <div class="why-choose-one-box">
                                 <div class="why-choose-box-one-title">
                                     <i class="flaticon-trusted"></i>
-                                    <h4>Trusted & Transparent</h4>
+                                    <h4>Long Tenure Options</h4>
                                 </div>
                                 <p>
-                                    Since 2019, entrepreneurs across India trust us for transparent processes, real-time CRM tracking, and
-                                    reliable operations.
+                                    Enjoy repayment flexibility with loan tenures up to 15–20 years for easy EMIs.
                                 </p>
                             </div>
                         </div>
+
                     </div>
+
                 </div>
 
                 <!-- COUNTERS -->
                 <div class="col-xl-3 col-lg-12">
                     <ul class="counter-box-one">
                         <li>
-                            <h6 data-target="5" data-symbol="+">0</h6>
+                            <h6 data-target="15" data-symbol="K+">0</h6>
                             <span>01</span>
-                            <p>Years of Digital Excellence</p>
+                            <p>Customers Assisted</p>
                         </li>
 
                         <li>
-                            <h6 data-target="180" data-symbol="Cr+">0</h6>
+                            <h6 data-target="5" data-symbol="Cr+">0</h6>
                             <span>02</span>
-                            <p>Loan Disbursement Volume</p>
+                            <p>Maximum Loan Value</p>
                         </li>
 
                         <li>
-                            <h6 data-target="200" data-symbol="+">0</h6>
+                            <h6 data-target="30" data-symbol="+">0</h6>
                             <span>03</span>
-                            <p>Active Partners Across India</p>
+                            <p>Top Banks & NBFCs</p>
                         </li>
                     </ul>
                 </div>
@@ -258,76 +266,32 @@
         </div>
     </section>
 
-    <!-- TESTIMONIALS -->
-   <div class="testimonial-two">
-    <div class="testimonial-shape-one-1">
-        <img src="assets/images/shape/testimonial-shape-two-1.png" alt="shape">
-    </div>
-
-    <div class="container">
-        <div class="heading-box">
-            <span class="heading-subtitle wow fadeInUp animated">🤝 TESTIMONIALS</span>
-            <h2 class="heading-title wow fadeInUp animated">What our partners & clients say about us</h2>
-        </div>
-
-        <div class="testimonial-slider-two">
-
-            <?php foreach ($testimonials as $t): ?>
-                <div class="testimonial-slider-two-item">
-                    <div class="testimonial-slider-two-box">
-
-                        <div class="testimonial-two-box-meta">
-                            <img src="<?= $t['image'] ?>" alt="img">
-                            <div class="testimonial-two-membar">
-                                <h5><?= $t['name'] ?></h5>
-                                <span><?= $t['designation'] ?></span>
-                            </div>
-                        </div>
-
-                        <p><?= $t['message'] ?></p>
-
-                        <span class="tagline"><?= $t['tagline'] ?></span>
-
-                        <div class="last-quote text-end">
-                            <i class="flaticon-quote-1"></i>
-                        </div>
-
-                    </div>
-                </div>
-            <?php endforeach; ?>
-
-        </div>
-    </div>
-</div>
-
-
-
-   
-
     <!-- CTA -->
     <section class="cta-one">
         <div class="container">
             <div class="row justify-content-between align-items-center">
+
                 <div class="col-xl-8 col-md-9 col-sm-9 col-9">
                     <div class="cta-title">
                         <h2>
-                            Join more than 200+ partners growing their financial business with Capital Karo’s trusted CRM and digital tools.
+                            Unlock Your Property’s True Value — Apply for a Mortgage Loan Today!
                         </h2>
                     </div>
-                    <a href="contact-us" class="btn btn-secondary">Contact us <i class="flaticon-next"></i></a>
+                    <a href="contact-us" class="btn btn-secondary">
+                        Apply for Mortgage Loan <i class="flaticon-next"></i>
+                    </a>
                 </div>
+
                 <div class="col-md-3 col-sm-3 col-3">
                     <img src="assets/images/cta-Logo.png" alt="logo">
                 </div>
+
             </div>
         </div>
     </section>
 
-    <!-- FOOTER -->
-    <?php
-    include '_inc/footer.php';
-    include '_inc/footer-js.php';
-    ?>
+    <?php include '_inc/footer.php'; ?>
+    <?php include '_inc/footer-js.php'; ?>
 
 </body>
 

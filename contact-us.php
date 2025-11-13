@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <?php include_once '_data/data.php'; ?>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loanlift || Contact-Us </title>
+    <title><?php echo $site_name;?> || Contact-Us </title>
     <?php include '_inc/skin.php'; ?>
     <style>
         .contact-form-right .social-icon {
@@ -30,14 +31,9 @@
     <div class="custom-cursor-one"></div>
     <div class="custom-cursor-two"></div>
 
-    <div class="preloader">
-        <div class="loading-container">
-            <div class="loading-text">
-                <span>L</span><span>O</span><span>A</span><span>N</span>
-                <span>L</span><span>I</span><span>F</span><span>T</span>
-            </div>
-        </div>
-    </div>
+   <?php
+   include '_inc/pre-loader.php';
+   ?>
 
     <!-- header start -->
     <?php include '_inc/header.php'; ?>
@@ -50,7 +46,7 @@
                 <h2>Contact</h2>
             </div>
             <ul class="bradcrumb">
-                <li><a href="index.php">Home</a></li>
+                <li><a href="index">Home</a></li>
                 <li><a href="#">Page</a></li>
                 <li><a href="#">Contacts Us</a></li>
             </ul>

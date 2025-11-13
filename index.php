@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<?php include '_data/data.php'; ?>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loanlift || Home One</title>
+    <title><?php echo $site_name; ?> || Home One</title>
     <?php
     include '_inc/skin.php';
     ?>
@@ -43,7 +43,7 @@
                                             planning, strategic business advice.</p>
                                     </div>
                                     <div class="fade-in-up">
-                                        <a href="contact-us.html" class="btn btn-primary">Contact Us<i
+                                        <a href="contact-us" class="btn btn-primary">Contact Us<i
                                                 class="flaticon-next"></i></a>
                                     </div>
                                 </div>
@@ -76,7 +76,7 @@
                                             planning, strategic business advice.</p>
                                     </div>
                                     <div class="fade-in-up">
-                                        <a href="contact-us.html" class="btn btn-primary">Contact Us<i
+                                        <a href="contact-us" class="btn btn-primary">Contact Us<i
                                                 class="flaticon-next"></i></a>
                                     </div>
                                 </div>
@@ -127,7 +127,7 @@
                         <p>Our Personal Loans offer flexible terms and competitive rates, tailored to meet your
                             individual needs.</p>
                     </div>
-                    <a href="service-details.html" class="read-more-btn">
+                    <a href="service-details" class="read-more-btn">
                         <i class="flaticon-next"></i>
                     </a>
                 </div>
@@ -143,7 +143,7 @@
                         <p>Quick and reliable emergency loans, providing fast access to funds when you need them most.
                             Apply now for instant relief.</p>
                     </div>
-                    <a href="service-details.html" class="read-more-btn">
+                    <a href="service-details" class="read-more-btn">
                         <i class="flaticon-next"></i>
                     </a>
                 </div>
@@ -159,7 +159,7 @@
                         <p>Empower your business with our flexible financing options. Tailored to meet the unique needs
                             of your enterprise.</p>
                     </div>
-                    <a href="service-details.html" class="read-more-btn">
+                    <a href="service-details" class="read-more-btn">
                         <i class="flaticon-next"></i>
                     </a>
                 </div>
@@ -175,7 +175,7 @@
                         <p>Student loans open doors to education but can also become a heavy financial burden if not
                             managed wisely. Plan carefully.</p>
                     </div>
-                    <a href="service-details.html" class="read-more-btn">
+                    <a href="service-details" class="read-more-btn">
                         <i class="flaticon-next"></i>
                     </a>
                 </div>
@@ -191,7 +191,7 @@
                         <p>Secure your dream home with our competitive mortgage loans. Enjoy flexible terms, low
                             interest rates</p>
                     </div>
-                    <a href="service-details.html" class="read-more-btn">
+                    <a href="service-details" class="read-more-btn">
                         <i class="flaticon-next"></i>
                     </a>
                 </div>
@@ -207,13 +207,13 @@
                         <p>This content highlights the key benefits of your small business loan offerings, appealing to
                             entrepreneurs seeking financial support.</p>
                     </div>
-                    <a href="service-details.html" class="read-more-btn">
+                    <a href="service-details" class="read-more-btn">
                         <i class="flaticon-next"></i>
                     </a>
                 </div>
             </div>
             <div class="text-center">
-                <a href="service.html" class="btn btn-secondary">View More<i class="flaticon-next"></i></a>
+                <a href="service" class="btn btn-secondary">View More<i class="flaticon-next"></i></a>
             </div>
         </div>
     </section>
@@ -252,7 +252,7 @@
                                 <li>Streamlined processes for approvals.</li>
                             </ul>
                         </div>
-                        <a href="apply-loan.html" class="btn btn-secondary">Get Started<i class="flaticon-next"></i></a>
+                        <a href="apply-loan" class="btn btn-secondary">Get Started<i class="flaticon-next"></i></a>
                     </div>
                 </div>
                 <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-8 col-sm-10">
@@ -534,13 +534,13 @@
                             <img src="assets/images/case-study/case-study-1.jpg" alt="case-image">
                             <div class="case-studies-one-details">
                                 <div class="case-studies-details-one-inner">
-                                    <h4><a href="portfolio-details.html">A case study on securing growth funding with
+                                    <h4><a href="portfolio-details">A case study on securing growth funding with
                                             loanLift</a></h4>
                                 </div>
                                 <div class="case-studies-one__details">
                                     <span class="tagline">Business</span>
                                     <p>Client name : technology Solutions</p>
-                                    <a href="portfolio-details.html" class="more-btn m-auto"><i
+                                    <a href="portfolio-details" class="more-btn m-auto"><i
                                             class="flaticon-next"></i></a>
                                 </div>
                             </div>
@@ -551,13 +551,13 @@
                             <img src="assets/images/case-study/case-study-2.jpg" alt="case-image">
                             <div class="case-studies-one-details">
                                 <div class="case-studies-details-one-inner">
-                                    <h4><a href="portfolio-details.html">How loanLift supported in managing cash
+                                    <h4><a href="portfolio-details">How loanLift supported in managing cash
                                             flow</a></h4>
                                 </div>
                                 <div class="case-studies-one__details">
                                     <span class="tagline">Home</span>
                                     <p>Client name : Centric Lending</p>
-                                    <a href="portfolio-details.html" class="more-btn m-auto"><i
+                                    <a href="portfolio-details" class="more-btn m-auto"><i
                                             class="flaticon-next"></i></a>
                                 </div>
                             </div>
@@ -568,13 +568,13 @@
                             <img src="assets/images/case-study/case-study-3.jpg" alt="case-image">
                             <div class="case-studies-one-details">
                                 <div class="case-studies-details-one-inner">
-                                    <h4><a href="portfolio-details.html">A case study on growth through loanLift
+                                    <h4><a href="portfolio-details">A case study on growth through loanLift
                                             financing</a></h4>
                                 </div>
                                 <div class="case-studies-one__details">
                                     <span class="tagline">Student</span>
                                     <p>Client name : Debt Restructuring</p>
-                                    <a href="portfolio-details.html" class="more-btn m-auto"><i
+                                    <a href="portfolio-details" class="more-btn m-auto"><i
                                             class="flaticon-next"></i></a>
                                 </div>
                             </div>
@@ -585,13 +585,13 @@
                             <img src="assets/images/case-study/case-study-4.jpg" alt="case-image">
                             <div class="case-studies-one-details">
                                 <div class="case-studies-details-one-inner">
-                                    <h4><a href="portfolio-details.html">LoanLift's strategies for enhancing loan
+                                    <h4><a href="portfolio-details">LoanLift's strategies for enhancing loan
                                             accessibility</a></h4>
                                 </div>
                                 <div class="case-studies-one__details">
                                     <span class="tagline">Business</span>
                                     <p>Client name : Streamlined Application </p>
-                                    <a href="portfolio-details.html" class="more-btn m-auto"><i
+                                    <a href="portfolio-details" class="more-btn m-auto"><i
                                             class="flaticon-next"></i></a>
                                 </div>
                             </div>
@@ -602,13 +602,13 @@
                             <img src="assets/images/case-study/case-study-1.jpg" alt="case-image">
                             <div class="case-studies-one-details">
                                 <div class="case-studies-details-one-inner">
-                                    <h4><a href="portfolio-details.html">A deep dive into loanLift's innovative mortgage
+                                    <h4><a href="portfolio-details">A deep dive into loanLift's innovative mortgage
                                             solutions</a></h4>
                                 </div>
                                 <div class="case-studies-one__details">
                                     <span class="tagline"> Personal</span>
                                     <p>Client name : Quick Solutions</p>
-                                    <a href="portfolio-details.html" class="more-btn m-auto"><i
+                                    <a href="portfolio-details" class="more-btn m-auto"><i
                                             class="flaticon-next"></i></a>
                                 </div>
                             </div>
@@ -640,7 +640,7 @@
             <div class="row gutter-y-30">
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <div class="team-one-box">
-                        <a href="team-details.html" class="team-one-image">
+                        <a href="team-details" class="team-one-image">
                             <img src="assets/images/team/team-1.jpg" alt="team-image">
                         </a>
                         <div class="team-one-details">
@@ -666,7 +666,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <div class="team-one-box">
-                        <a href="team-details.html" class="team-one-image">
+                        <a href="team-details" class="team-one-image">
                             <img src="assets/images/team/team-2.jpg" alt="team-image">
                         </a>
                         <div class="team-one-details">
@@ -692,7 +692,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <div class="team-one-box">
-                        <a href="team-details.html" class="team-one-image">
+                        <a href="team-details" class="team-one-image">
                             <img src="assets/images/team/team-3.jpg" alt="team-image">
                         </a>
                         <div class="team-one-details">
@@ -718,7 +718,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <div class="team-one-box">
-                        <a href="team-details.html" class="team-one-image">
+                        <a href="team-details" class="team-one-image">
                             <img src="assets/images/team/team-4.jpg" alt="team-image">
                         </a>
                         <div class="team-one-details">
@@ -858,7 +858,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="blog-one-box">
                         <div class="blog-one-image">
-                            <a href="blog-details.html">
+                            <a href="blog-details">
                                 <img src="assets/images/blog/blog-1.jpg" alt="blog-image">
                             </a>
                             <a href="#" class="blog-one-tag">
@@ -870,10 +870,10 @@
                             <p><a href="#">On 29 Sup 2024</a></p>
                         </div>
                         <div class="blog-one-details">
-                            <h5><a href="blog-details.html">Maximizing ROI: how data-driven strategies can transform
+                            <h5><a href="blog-details">Maximizing ROI: how data-driven strategies can transform
                                     your
                                     business</a></h5>
-                            <a href="blog-details.html" class="btn-link"><span>Read More</span><i
+                            <a href="blog-details" class="btn-link"><span>Read More</span><i
                                     class="flaticon-next"></i></a>
                         </div>
                     </div>
@@ -881,7 +881,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="blog-one-box">
                         <div class="blog-one-image">
-                            <a href="blog-details.html">
+                            <a href="blog-details">
                                 <img src="assets/images/blog/blog-3.jpg" alt="blog-image">
                             </a>
                             <a href="#" class="blog-one-tag">
@@ -893,9 +893,9 @@
                             <p><a href="#">On 05 Jan 2024</a></p>
                         </div>
                         <div class="blog-one-details">
-                            <h5><a href="blog-details.html">How to successfully manage your loan repayments: tips and
+                            <h5><a href="blog-details">How to successfully manage your loan repayments: tips and
                                     strategies</a></h5>
-                            <a href="blog-details.html" class="btn-link"><span>Read More</span><i
+                            <a href="blog-details" class="btn-link"><span>Read More</span><i
                                     class="flaticon-next"></i></a>
                         </div>
                     </div>
@@ -903,7 +903,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="blog-one-box">
                         <div class="blog-one-image">
-                            <a href="blog-details.html">
+                            <a href="blog-details">
                                 <img src="assets/images/blog/blog-2.jpg" alt="blog-image">
                             </a>
                             <a href="#" class="blog-one-tag">
@@ -915,10 +915,10 @@
                             <p><a href="#">On 18 Feb 2024</a></p>
                         </div>
                         <div class="blog-one-details">
-                            <h5><a href="blog-details.html">The impact of credit scores on loan approval: what you need
+                            <h5><a href="blog-details">The impact of credit scores on loan approval: what you need
                                     to
                                     know</a></h5>
-                            <a href="blog-details.html" class="btn-link"><span>Read More</span><i
+                            <a href="blog-details" class="btn-link"><span>Read More</span><i
                                     class="flaticon-next"></i></a>
                         </div>
                     </div>
@@ -937,7 +937,7 @@
                             combining creativity with tailored
                             business loan solutions.</h2>
                     </div>
-                    <a href="contact-us.html" class="btn btn-secondary">Contact us <i class="flaticon-next"></i></a>
+                    <a href="contact-us" class="btn btn-secondary">Contact us <i class="flaticon-next"></i></a>
                 </div>
                 <div class="col-md-3 col-sm-3 col-3">
                     <img src="assets/images/cta-Logo.png" alt="logo">

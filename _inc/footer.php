@@ -10,7 +10,7 @@
                             </a>
                         </div>
                         <div class="footer-one-about-details">
-                            <p>Contact us loanlift and collaborate with us for making your big dream business with
+                            <p>Contact us <?php echo $site_name; ?> and collaborate with us for making your big dream business with
                                 our best loan services.</p>
                         </div>
                         <div class="footer-one-about-contact">
@@ -46,12 +46,12 @@
                         <div class="footer-one-link">
                             <h3>Services</h3>
                             <ul>
-                                <li><i class="flaticon-right-arrow"></i><a href="service-details">Personal Loans</a></li>
-                                <li><i class="flaticon-right-arrow"></i><a href="service-details">Business Loans</a></li>
-                                <li><i class="flaticon-right-arrow"></i><a href="service-details">Mortgage Loans</a></li>
-                                <li><i class="flaticon-right-arrow"></i><a href="service-details">Emergency Loans</a></li>
-                                <li><i class="flaticon-right-arrow"></i><a href="service-details">Student Loans</a></li>
-                                <li><i class="flaticon-right-arrow"></i><a href="service-details">Small Business Loans</a></li>
+                                <li><i class="flaticon-right-arrow"></i><a href="personal-loan">Personal Loans</a></li>
+                                <li><i class="flaticon-right-arrow"></i><a href="business-loan">Business Loans</a></li>
+                                <li><i class="flaticon-right-arrow"></i><a href="mortgage-loan">Mortgage Loans</a></li>
+                                <li><i class="flaticon-right-arrow"></i><a href="emergency-loan">Emergency Loans</a></li>
+                                <li><i class="flaticon-right-arrow"></i><a href="student-loan">Student Loans</a></li>
+                                <li><i class="flaticon-right-arrow"></i><a href="small-business-loan">Small Business Loans</a></li>
                             </ul>
                         </div>
                     </div>
