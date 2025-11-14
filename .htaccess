@@ -1,0 +1,13 @@
+Options -Indexes
+
+# Set custom error document for 403 Forbidden
+ErrorDocument 403 /views/403.php
+ErrorDocument 404 /views/404.php
+
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php [QSA,L]
+
+
