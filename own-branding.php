@@ -23,7 +23,7 @@
                 <p style="max-width:680px; margin:auto;">
                     India’s No.1 White-Label Loan Business Program empowering entrepreneurs to launch their own Finance Brand with 60+ Bank & NBFC tie-ups.
                 </p>
-                <a href="#pricing" class="btn btn-primary mt-3">Get Started <i class="flaticon-next"></i></a>
+                <a href="#pricing" class="btn btn-secondary mt-3">Get Started <i class="flaticon-next"></i></a>
             </div>
         </div>
     </div>
@@ -676,7 +676,7 @@
                     <br> No charges for registration — start instantly!
                 </p>
 
-                <a href="YOUR-GOOGLE-FORM-LINK"
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSclm4v4A3PKvMCyyGkmgLEL6F3RQvATfXuuUAgUBsByYPIvVQ/viewform?usp=header"
                     target="_blank"
                     class="btn btn-primary"
                     style="
@@ -937,7 +937,7 @@
                         <p>Get your CRM Portal + Full Loan Website with your branding.</p>
 
                         <a href="#cta" class="btn btn-primary"
-                            style="background:#1B1464; color:#fff; padding:12px 28px; border-radius:12px; margin-top:15px;">
+                            style="background:#F3AB09; color:#1B1464; padding:12px 28px; border-radius:12px; margin-top:15px;">
                             Get Started
                         </a>
                     </div>
@@ -1357,8 +1357,8 @@
 
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSclm4v4A3PKvMCyyGkmgLEL6F3RQvATfXuuUAgUBsByYPIvVQ/viewform?usp=header"
                 target="_blank"
-                class="btn btn-primary"
-                style="background:#1B1464; color:#fff; padding:16px 40px; font-size:20px; border-radius:14px;">
+                class="btn btn-warning mt-3"
+                style="background:#1B1464; color:#f3ab09; padding:16px 40px; font-size:20px; border-radius:14px;">
                 Start Free Registration
             </a>
 

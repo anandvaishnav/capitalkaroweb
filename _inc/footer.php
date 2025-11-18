@@ -154,49 +154,43 @@
         <div class="logo-box">
             <a href="index"><img width="150" src="<?php echo $logo_img; ?>" alt="logo"></a>
         </div>
-        <div class="mobile-nav-container">
-            <ul class="mobile-menu-list">
-                <li class="menu-item-has-children dropdown"><a href="#">Home</a>
-                    <ul>
-                        <li><a href="index">Home-1</a></li>
-                        <li><a href="index-2">Home-2</a></li>
-                        <li><a href="index-3">Home-3</a></li>
-                    </ul>
-                </li>
-                <li class="menu-item-has-children dropdown"><a href="#">Services</a>
-                    <ul>
-                        <li><a href="service">Services</a></li>
-                        <li><a href="service-2">Services 2</a></li>
-                        <li><a href="service-details">Services Details</a></li>
-                    </ul>
-                </li>
-                <li class="menu-item-has-children dropdown"><a href="#">Pages</a>
-                    <ul>
-                        <li><a href="about">About Us</a></li>
-                        <li><a href="faq">FAQ</a></li>
-                        <li><a href="careers">Careers</a></li>
-                        <li><a href="apply-loan">Apply a Loan</a></li>
-                        <li><a href="contact-us">Contact Us</a></li>
-                        <li><a href="team">Meet The Team</a></li>
-                    </ul>
-                </li>
-                <li class="menu-item-has-children dropdown"><a href="#">Blog</a>
-                    <ul>
-                        <li><a href="blog">Blog Standards</a></li>
-                        <li><a href="blog-grid">Blog Grid</a></li>
-                        <li><a href="blog-grid-2">Blog Grid 2</a></li>
-                        <li><a href="blog-details">Blog Details</a></li>
-                    </ul>
-                </li>
-                <li class="menu-item-has-children dropdown"><a href="#">Portfolio</a>
-                    <ul>
-                        <li><a href="portfolio">Portfolio</a></li>
-                        <li><a href="portfolio-grid">Portfolio Grid</a></li>
-                        <li><a href="portfolio-details">Portfolio Details</a></li>
-                    </ul>
-                </li>
+     <div class="mobile-nav-container">
+    <ul class="mobile-menu-list">
+
+        <li><a href="index">Home</a></li>
+
+        <li class="menu-item-has-children dropdown"><a href="#">About</a>
+            <ul>
+                <li><a href="about">About CapitalKaro</a></li>
+                <li><a href="faq">FAQ</a></li>
+                <li><a href="privacy-policy">Privacy Policy</a></li>
+                <li><a href="terms-and-conditions">Terms & Conditions</a></li>
             </ul>
-        </div>
+        </li>
+
+        <li class="menu-item-has-children dropdown"><a href="#">Services</a>
+            <ul>
+                <li><a href="all-loans">All Loans</a></li>
+                <li><a href="kyc-loan">KYC Loan</a></li>
+                <li><a href="instant-loan">Instant Loan</a></li>
+                <li><a href="personal-loan">Personal Loan</a></li>
+                <li><a href="business-loan">Business Loan</a></li>
+                <li><a href="home-loan">Home Loan</a></li>
+                <li><a href="credit-card">Credit Card</a></li>
+                <li><a href="saving-account">Saving Account</a></li>
+                <li><a href="demat-account">Demat Account</a></li>
+                <li><a href="loan-against-shares">Loan Against Shares</a></li>
+            </ul>
+        </li>
+
+        <li><a href="own-branding">Own Branding</a></li>
+
+        <li><a href="faq">FAQ</a></li>
+        <li><a href="contact-us">Contact Us</a></li>
+
+    </ul>
+</div>
+
     </div>
 </div>
 
