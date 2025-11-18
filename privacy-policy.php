@@ -25,7 +25,7 @@
             </div>
             <ul class="bradcrumb text-center">
                 <li><a href="index">Home</a></li>
-                <li><a href="#">Pages</a></li>
+                <li><a href="#"><?php echo $site_name; ?></a></li>
                 <li><a href="#">Privacy Policy</a></li>
             </ul>
         </div>
@@ -47,28 +47,93 @@
                         </div>
 
                         <div class="section-details">
-
                             <p>
-                                At Capital Karo, we respect your privacy and are committed to protecting your personal information.
-                                We collect only the data necessary to provide our services efficiently and securely.
+                                This Privacy Policy explains how Capital Karo and Dhanita Technologies Pvt. Ltd. collect, use, store, and protect your personal and business data when you use our website, CRM system, mobile app, or white-label platforms.
                             </p>
 
+                            <h4 class="mt-4">1. Information We Collect</h4>
                             <p>
-                                Any data shared with us is used strictly for service delivery, communication, and support.
-                                We never sell, rent, or disclose user data to third parties without consent, unless legally required.
+                                We may collect personal details, contact information, business data, documents, KYC details, application information, usage logs, device details, and data uploaded by you or your team into the CRM platform.
                             </p>
 
+                            <h4 class="mt-4">2. How We Use Your Information</h4>
                             <p>
-                                We may use cookies and analytics tools to improve user experience and optimize our website’s performance.
-                                You may disable cookies through your browser at any time.
+                                Your data is used to operate the CRM, manage leads, enable partner services, provide technical support, improve platform performance, verify identity, prevent fraud, and meet compliance requirements.
                             </p>
 
+                            <h4 class="mt-4">3. Data Ownership</h4>
                             <p>
-                                For privacy-related queries, you can reach out to us at:
-                                <strong>support@capitalkaro.com</strong>
+                                All customer data, leads, and files uploaded by you belong to you.
+                                Capital Karo does not sell, trade, or use your data for external marketing.
                             </p>
 
+                            <h4 class="mt-4">4. Data Sharing</h4>
+                            <p>
+                                We do not share your data with any third party except:
+                                • With Banks/NBFCs as part of the DSA/referral process
+                                • With your own team members added by you
+                                • When required by law, court order, or government authority
+                            </p>
+
+                            <h4 class="mt-4">5. White-Label CRM Responsibility</h4>
+                            <p>
+                                Partners using the white-label system are fully responsible for managing the data and privacy of their team and customers.
+                                Capital Karo only provides the platform.
+                            </p>
+
+                            <h4 class="mt-4">6. Data Security</h4>
+                            <p>
+                                We use encrypted servers, secured hosting, restricted access, and internal safeguards to protect CRM data.
+                                However, no online system is 100% risk-free, and users must ensure safe passwords and responsible access.
+                            </p>
+
+                            <h4 class="mt-4">7. Cookies & Tracking</h4>
+                            <p>
+                                Our website/CRM may use cookies for login security, analytics, and better user experience.
+                                You may disable cookies, but some features may not work properly.
+                            </p>
+
+                            <h4 class="mt-4">8. Third-Party Integrations</h4>
+                            <p>
+                                If you use external APIs (SMS, WhatsApp, payment gateway, etc.), your data may be processed as per their policy.
+                                We are not responsible for data shared with external service providers.
+                            </p>
+
+                            <h4 class="mt-4">9. Data Retention</h4>
+                            <p>
+                                Your CRM data stays stored as long as your account is active.
+                                Deleted accounts may result in permanent loss of data, which cannot be recovered.
+                            </p>
+
+                            <h4 class="mt-4">10. User Responsibility</h4>
+                            <p>
+                                You are responsible for the accuracy of data entered, managing team access, ensuring compliance, and preventing unauthorized use of your CRM account.
+                            </p>
+
+                            <h4 class="mt-4">11. Children’s Data</h4>
+                            <p>
+                                Our services are not intended for minors. We do not knowingly collect data from individuals below 18 years of age.
+                            </p>
+
+                            <h4 class="mt-4">12. Policy Updates</h4>
+                            <p>
+                                We may update this Privacy Policy anytime. Continued use of the platform means you accept the updated terms.
+                            </p>
+
+                            <h4 class="mt-4">13. Contact Information</h4>
+                            <p>
+                                For privacy-related concerns:<br>
+                                <strong>Phone:</strong> 9217164796<br>
+                                <strong>Email:</strong> support@capitalkaro.com<br>
+                                <strong>Office:</strong> 115, 1st Floor, SRS Tower, Sector 46, Faridabad, Haryana 121010
+                            </p>
+
+                            <h4 class="mt-4">14. Jurisdiction</h4>
+                            <p>
+                                All privacy-related disputes fall under Faridabad, Haryana jurisdiction only.
+                            </p>
                         </div>
+
 
                         <div class="text-center mt-4">
                             <a href="contact-us" class="btn btn-secondary">Contact Support <i class="flaticon-next"></i></a>
@@ -86,4 +151,5 @@
     <?php include '_inc/footer-js.php'; ?>
 
 </body>
+
 </html>

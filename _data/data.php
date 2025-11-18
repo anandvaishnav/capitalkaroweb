@@ -11,6 +11,10 @@ $site_name = "CapitalKaro";
 $logo_name = "CapitalKaro";
 $logo_img  = "assets/images/logo/logo.jpg";
 
+$intro = 'CapitalKaro is a premier loan sourcing and white-label CRM solutions provider based in India. We specialize in empowering businesses and individuals to achieve their financial goals through innovative technology and expert guidance. Our comprehensive suite of services includes cutting-edge CRM platforms tailored for Direct Selling Agents (DSAs), enabling them to efficiently manage client relationships, streamline operations, and enhance productivity.';
+
+$short ='Contact CapitalKaro today and start building your dream business with our powerful loan services and white-label CRM solutions.
+';
 
 
 // Social Media Links
@@ -21,14 +25,15 @@ if ($enable_social_links) {
     $facebook = "https://www.facebook.com/capitalkaro/";
     $instagram = "https://www.instagram.com/capitalkaro_official/";
     $youtube = "//www.youtube.com/channel/UC82U9dkb6Rv82bxYVE4kXBg / https://www.youtube.com/@Capitalkaro_Official";
-    $whatsapp = '9217164796';
+    $whatsapp = '+919217164796';
 };
 
 
 // Contect Details
 
 $address = '115, 1st floor SRS Tower, Mewala Maharajpur, Sector 46, Faridabad, Haryana Delhi NCR 121010';
-$phone = '9217164796';
+$address_short = 'Faridabad, Haryana Delhi NCR - India';
+$phone = '+919217164796';
 $support_email = 'support@capitalkaro.com';
 
 
@@ -37,7 +42,7 @@ $support_email = 'support@capitalkaro.com';
 // Copyright
 
 
-$copy_right = "© Copyright CapitalKaro. All rights reserved.";
+$copy_right = "© Copyright ". Date("Y")."  All rights reserved | CapitalKaro - ".$legal_company_name." ";
 
 
 $pricing = [
@@ -97,27 +102,28 @@ $pricing = [
 //---------------------------------------------
 $testimonials = [
     [
-        "name" => "Rahul Verma",
-        "designation" => "Entrepreneur",
-        "image" => "assets/images/testimonial/testimonial-1.png",
-        "message" => "Capital Karo helped me launch my own loan brand with their white-label CRM. From setup to operations, everything was seamless.",
+        "name" => "Amit Malhotra",
+        "designation" => "Loan DSA Partner",
+        "image" => "assets/images/team/team-six.jpg",
+        "message" => "Capital Karo ne mera kaam bahut aasaan kar diya. Unka white-label CRM use karke maine apna khud ka loan brand launch kiya – setup se support tak sab perfect tha.",
         "tagline" => "White-Label CRM Partner"
     ],
     [
-        "name" => "Ankita Sharma",
-        "designation" => "DSA Partner",
-        "image" => "assets/images/testimonial/testimonial-2.png",
-        "message" => "Their CRM and support team make the loan process extremely smooth. I scaled my business 3× in one year.",
-        "tagline" => "Loan Sourcing"
+        "name" => "Priya Nandwani",
+        "designation" => "Independent Loan Advisor",
+        "image" => "assets/images/team/team-eight.jpg",
+        "message" => "CRM bahut smooth hai, tracking aur partner management ne mera business 3x grow kar diya. Support team bhi hamesha available rehti hai.",
+        "tagline" => "Loan Sourcing & CRM User"
     ],
     [
-        "name" => "Manish Gupta",
-        "designation" => "Finance Consultant",
-        "image" => "assets/images/testimonial/testimonial-3.png",
-        "message" => "The best CRM for DSA business! Real-time tracking, partner management, and support are excellent.",
-        "tagline" => "CRM User"
+        "name" => "Suresh Patidar",
+        "designation" => "Finance Professional",
+        "image" => "assets/images/team/team-one.jpg",
+        "message" => "DSA business ke liye Capital Karo ka CRM best hai. Real-time tracking aur automation features ne meri productivity double kar di.",
+        "tagline" => "CRM & Partner Network User"
     ],
 ];
+
 
 
 //---------------------------------------------

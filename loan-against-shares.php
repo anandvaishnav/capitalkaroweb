@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo $site_name; ?> || Personal Loan</title>
+    <title><?php echo $site_name; ?> || Loan Against Shares</title>
     <?php include '_inc/skin.php'; ?>
 </head>
 
@@ -19,12 +19,12 @@
     <div class="inner-page-hero" style="background-image: url(assets/images/background/about-hero-bg.jpg);">
         <div class="container">
             <div class="hero-heading-title">
-                <h2>Personal Loan</h2>
+                <h2>Loan Against Shares</h2>
             </div>
             <ul class="bradcrumb">
                 <li><a href="index">Home</a></li>
                 <li><a href="all-loans">Services</a></li>
-                <li><a href="personal-loan">Personal Loan</a></li>
+                <li><a href="loan-against-shares">Loan Against Shares</a></li>
             </ul>
         </div>
     </div>
@@ -42,14 +42,14 @@
 
             <!-- Heading -->
             <div class="heading-box text-center mb-5">
-                <span class="heading-subtitle">💼 PERSONAL LOAN</span>
-                <h2 class="heading-title">Flexible Personal Loan for Your Every Financial Need</h2>
+                <span class="heading-subtitle">📊 LOAN AGAINST SHARES</span>
+                <h2 class="heading-title">Get Instant Loan by Pledging Your Shares & Securities</h2>
                 <p class="mt-2">
-                    Get a quick, unsecured personal loan for medical needs, home renovation, travel, weddings, debt consolidation or any personal expenses.
+                    Unlock the value of your shares without selling them. Get a secured overdraft or term loan at attractive interest rates.
                 </p>
             </div>
 
-            <!-- Highlight Points (Adjusted for Personal Loan) -->
+            <!-- Highlight Points -->
             <div class="row gutter-y-30 mb-5">
 
                 <div class="col-lg-4 col-md-6">
@@ -57,9 +57,9 @@
                         <div class="enhanced-icon-wrap">
                             <i class="flaticon-money-bag"></i>
                         </div>
-                        <h4 class="enhanced-title">High Loan Amount</h4>
+                        <h4 class="enhanced-title">No Need to Sell Shares</h4>
                         <p class="enhanced-text">
-                            Borrow up to ₹5,00,000 – ₹25,00,000 depending on income and credit profile.
+                            Stay invested in the market while using your shares to get funding whenever required.
                         </p>
                     </div>
                 </div>
@@ -67,11 +67,11 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="why-choose-one-box enhanced-box">
                         <div class="enhanced-icon-wrap">
-                            <i class="flaticon-solution"></i>
+                            <i class="flaticon-percent"></i>
                         </div>
-                        <h4 class="enhanced-title">No Collateral Needed</h4>
+                        <h4 class="enhanced-title">Low Interest Rates</h4>
                         <p class="enhanced-text">
-                            100% unsecured loan — no property, gold or security required for approval.
+                            LAS offers lower interest rates compared to personal loans or credit card loans.
                         </p>
                     </div>
                 </div>
@@ -81,9 +81,9 @@
                         <div class="enhanced-icon-wrap">
                             <i class="flaticon-calendar"></i>
                         </div>
-                        <h4 class="enhanced-title">Flexible EMI Options</h4>
+                        <h4 class="enhanced-title">Flexible Drawing Power</h4>
                         <p class="enhanced-text">
-                            Choose comfortable repayment tenure from 12 to 60 months based on your ability.
+                            Withdraw funds as per need with overdraft facility linked to your demat holdings.
                         </p>
                     </div>
                 </div>
@@ -98,15 +98,14 @@
 
                     <div class="content-block">
                         <h3 class="section-sub-title">📌 Eligibility Criteria</h3>
-                        <p class="section-lead"><strong>Eligibility varies by income and bank rules:</strong></p>
+                        <p class="section-lead"><strong>Simple rules for LAS approval:</strong></p>
 
                         <ul class="list-check styled-list mb-4">
-                            <li><i class="fa-solid fa-user-check me-2 text-secondary"></i>Age: <strong>21 – 60 years</strong></li>
-                            <li><i class="fa-solid fa-briefcase me-2 text-secondary"></i>Salaried or self-employed individuals</li>
-                            <li><i class="fa-solid fa-building me-2 text-secondary"></i>Salaried: Minimum monthly salary ₹15,000+</li>
-                            <li><i class="fa-solid fa-chart-line me-2 text-secondary"></i>Self-employed: Minimum 1 year business vintage</li>
-                            <li><i class="fa-solid fa-shield-halved me-2 text-secondary"></i>CIBIL score: <strong>680 or above preferred</strong></li>
-                            <li><i class="fa-solid fa-location-dot me-2 text-secondary"></i>Stable residence / work address proof</li>
+                            <li><i class="fa-solid fa-user-check me-2 text-secondary"></i>Age: <strong>21 – 70 years</strong></li>
+                            <li><i class="fa-solid fa-credit-card me-2 text-secondary"></i>Must hold a valid demat account</li>
+                            <li><i class="fa-solid fa-chart-line me-2 text-secondary"></i>Shares must be in approved list of banks/NBFCs</li>
+                            <li><i class="fa-solid fa-building-columns me-2 text-secondary"></i>Salaried / business / investor – all eligible</li>
+                            <li><i class="fa-solid fa-wallet me-2 text-secondary"></i>Loan value depends on market value of shares</li>
                         </ul>
                     </div>
 
@@ -115,10 +114,10 @@
 
                         <ul class="list-check styled-list">
                             <li><i class="fa-solid fa-id-card me-2 text-secondary"></i>Aadhaar + PAN Card</li>
-                            <li><i class="fa-solid fa-file-lines me-2 text-secondary"></i>3–6 months bank statement</li>
-                            <li><i class="fa-solid fa-receipt me-2 text-secondary"></i>Salary slips (salaried)</li>
-                            <li><i class="fa-solid fa-briefcase me-2 text-secondary"></i>Business proof (self-employed)</li>
-                            <li><i class="fa-solid fa-house me-2 text-secondary"></i>Address proof: Aadhaar / utility bill</li>
+                            <li><i class="fa-solid fa-file-invoice me-2 text-secondary"></i>Demat account statement</li>
+                            <li><i class="fa-solid fa-building me-2 text-secondary"></i>Bank statement (last 3–6 months)</li>
+                            <li><i class="fa-solid fa-shield-halved me-2 text-secondary"></i>KYC of borrower</li>
+                            <li><i class="fa-solid fa-file-contract me-2 text-secondary"></i>Pledge initiation request for shares</li>
                         </ul>
                     </div>
 
@@ -129,14 +128,14 @@
 
                     <div class="content-block">
                         <h3 class="section-sub-title">💰 Interest Rate & Loan Details</h3>
-                        <p class="section-lead"><strong>Based on your credit score & banking relationship:</strong></p>
+                        <p class="section-lead"><strong>Based on share portfolio and lender policy:</strong></p>
 
                         <ul class="list-check styled-list mb-4">
-                            <li><i class="fa-solid fa-indian-rupee-sign me-2 text-secondary"></i>Loan amount: <strong>₹1,00,000 – ₹25,00,000</strong></li>
-                            <li><i class="fa-solid fa-percent me-2 text-secondary"></i>Interest rate: <strong>10.5% – 24% annually</strong></li>
-                            <li><i class="fa-solid fa-calendar-check me-2 text-secondary"></i>Tenure: <strong>12 – 60 months</strong></li>
-                            <li><i class="fa-solid fa-receipt me-2 text-secondary"></i>Processing fee: <strong>1% – 3%</strong></li>
-                            <li><i class="fa-solid fa-gauge me-2 text-secondary"></i>Quick approval within <strong>24–48 hours</strong></li>
+                            <li><i class="fa-solid fa-indian-rupee-sign me-2 text-secondary"></i>Loan amount: <strong>₹50,000 – ₹5 Crore+</strong></li>
+                            <li><i class="fa-solid fa-percent me-2 text-secondary"></i>Interest rate: <strong>9% – 14% annually</strong></li>
+                            <li><i class="fa-solid fa-percent me-2 text-secondary"></i>Loan-to-Value (LTV): <strong>Up to 50–65%</strong> of share value</li>
+                            <li><i class="fa-solid fa-calendar-check me-2 text-secondary"></i>Tenure: <strong>12 – 36 months</strong></li>
+                            <li><i class="fa-solid fa-chart-line me-2 text-secondary"></i>Overdraft & term loan both available</li>
                         </ul>
                     </div>
 
@@ -144,11 +143,11 @@
                         <h3 class="section-sub-title">⚙️ How the Process Works</h3>
 
                         <ul class="list-check styled-list">
-                            <li><i class="fa-solid fa-file-pen me-2 text-secondary"></i>Fill in basic application details</li>
-                            <li><i class="fa-solid fa-upload me-2 text-secondary"></i>Upload KYC + income documents</li>
-                            <li><i class="fa-solid fa-chart-line me-2 text-secondary"></i>Credit score and affordability check</li>
-                            <li><i class="fa-solid fa-bolt me-2 text-secondary"></i>Loan approval within hours</li>
-                            <li><i class="fa-solid fa-piggy-bank me-2 text-secondary"></i>Loan amount directly credited to your bank</li>
+                            <li><i class="fa-solid fa-file-pen me-2 text-secondary"></i>Share portfolio submitted for evaluation</li>
+                            <li><i class="fa-solid fa-chart-pie me-2 text-secondary"></i>LTV calculation based on share value</li>
+                            <li><i class="fa-solid fa-handshake me-2 text-secondary"></i>Pledge initiated in demat account</li>
+                            <li><i class="fa-solid fa-check-double me-2 text-secondary"></i>Loan approved after pledge confirmation</li>
+                            <li><i class="fa-solid fa-money-bill-transfer me-2 text-secondary"></i>Funds disbursed to bank account</li>
                         </ul>
                     </div>
 
@@ -164,7 +163,7 @@
             <div class="row justify-content-between align-items-center">
                 <div class="col-xl-8 col-md-9 col-sm-9 col-9">
                     <div class="cta-title">
-                        <h2>Get a Personal Loan with fast approval and flexible EMI options — designed for your needs.</h2>
+                        <h2>Get immediate liquidity without selling your shares. Make your portfolio work for you.</h2>
                     </div>
                     <a href="contact-us" class="btn btn-secondary">
                         Apply Now <i class="flaticon-next"></i>
@@ -179,6 +178,6 @@
 
     <?php include '_inc/footer.php'; ?>
     <?php include '_inc/footer-js.php'; ?>
-</body>
 
+</body>
 </html>

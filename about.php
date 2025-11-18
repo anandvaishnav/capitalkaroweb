@@ -26,7 +26,7 @@
             </div>
             <ul class="bradcrumb">
                 <li><a href="index">Home</a></li>
-                <li><a href="#">Page </a></li>
+                <li><a href="#"><?= $site_name ?> </a></li>
                 <li><a href="#">About Us </a></li>
             </ul>
         </div>
@@ -48,18 +48,18 @@
                         <div class="heading-box">
                             <span class="heading-subtitle wow fadeInUp animated">🤝 ABOUT CAPITAL KARO</span>
                             <h2 class="heading-title wow fadeInUp animated">
-                                Empowering India’s Financial Entrepreneurs Since 2019
+                                Empowering India’s Financial Entrepreneurs Since 2024
                             </h2>
                         </div>
                         <div class="section-details">
                             <p>
-                                Capital Karo began its journey in 2019, working closely with offline partners and leading DSAs across India.
+                                Capital Karo began its journey in 2024, working closely with offline partners and leading DSAs across India.
                                 After years of strong offline success, we took a major leap in 2024 by launching our digital platform — a complete
                                 loan sourcing and partner management ecosystem.
                             </p>
 
                             <p>
-                                Today, Capital Karo has successfully helped disburse over <strong>₹180+ crore</strong> in loans nationwide. With our
+                                Today, Capital Karo has successfully helped disburse over <strong>₹18+ crore</strong> in loans nationwide. With our
                                 Own Branding Program, we empower entrepreneurs to launch their own loan company under their brand name using our
                                 white-label CRM technology.
                             </p>
@@ -235,21 +235,21 @@
                 <div class="col-xl-3 col-lg-12">
                     <ul class="counter-box-one">
                         <li>
-                            <h6 data-target="5" data-symbol="+">0</h6>
+                            <h6 data-target="60" data-symbol="+">0</h6>
                             <span>01</span>
-                            <p>Years of Digital Excellence</p>
+                            <p>Banking Partners</p>
                         </li>
 
                         <li>
-                            <h6 data-target="180" data-symbol="Cr+">0</h6>
+                            <h6 data-target="18" data-symbol="Cr+">0</h6>
                             <span>02</span>
-                            <p>Loan Disbursement Volume</p>
+                            <p>Total Loan Disbursed</p>
                         </li>
 
                         <li>
-                            <h6 data-target="200" data-symbol="+">0</h6>
+                            <h6 data-target="160" data-symbol="+">0</h6>
                             <span>03</span>
-                            <p>Active Partners Across India</p>
+                            <p>Active White-Label Partners</p>
                         </li>
                     </ul>
                 </div>

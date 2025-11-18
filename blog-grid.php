@@ -111,7 +111,7 @@
                                 <p><a href="#">On 10 May 2024</a></p>
                             </div>
                             <div class="blog-item-details">
-                                <h3><a href="blog-details">How to Loanlift for Your Startup's Growth Plans to
+                                <h3><a href="blog-details">How to <?= $site_name ?>for Your Startup's Growth Plans to
                                         loan</a></h3>
                                 <a href="blog-details" class="btn-link"><span>continue reading</span> <i
                                         class="flaticon-next"></i></a>
@@ -192,7 +192,7 @@
                             </div>
                             <div class="blog-item-details">
                                 <h3><a href="blog-details">Unlocking Your Path to Financial Freedom with
-                                        Loanlift</a></h3>
+                                        capitalkaro</a></h3>
                                 <a href="blog-details" class="btn-link"><span>continue reading</span> <i
                                         class="flaticon-next"></i></a>
                             </div>

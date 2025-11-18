@@ -69,7 +69,7 @@
                         <p>Securing a loan can be a pivotal moment for both individuals and businesses, providing the
                             necessary funds to achieve significant goals and milestones. Whether it's expanding a
                             business, purchasing a home, or covering unexpected expenses, a well-structured loan offers
-                            financial flexibility and support. At Loanlift, we understand the diverse needs of our
+                            financial flexibility and support. At capitalkaro, we understand the diverse needs of our
                             clients and offer a range of loan options tailored to fit unique circumstances. Our
                             commitment to transparent processes, competitive rates, and personalized service ensures
                             that borrowers can confidently navigate their financial journeys. With our expert guidance,

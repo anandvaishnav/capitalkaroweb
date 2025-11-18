@@ -10,32 +10,43 @@
                             </a>
                         </div>
                         <div class="footer-one-about-details">
-                            <p>Contact us <?php echo $site_name; ?> and collaborate with us for making your big dream business with
-                                our best loan services.</p>
+                            <p><?php echo $short; ?></p>
                         </div>
                         <div class="footer-one-about-contact">
-                            <h4>Contact us</h4>
+                            <h4>Reach us</h4>
                             <ul>
                                 <li>
                                     <?php 
-                                    $support_email = isset($support_email) ? trim($support_email) : 'default@example.com';
+                                    $support_email = isset($support_email) ? trim($support_email) : '-';
                                     if (filter_var($support_email, FILTER_VALIDATE_EMAIL)): ?>
-                                        <a href="mailto:<?php echo htmlspecialchars($support_email); ?>">
+                                        <a href="mailto:<?php echo htmlspecialchars($support_email); ?>"> <i class="flaticon-mail"></i>
                                             <?php echo htmlspecialchars($support_email); ?>
                                         </a>
                                     <?php else: ?>
-                                        <span>Invalid email</span>
+                                        <span>-</span>
                                     <?php endif; ?>
                                 </li>
                                 <li>
                                     <?php 
                                     $phone = isset($phone) ? trim($phone) : '';
                                     if (!empty($phone)): ?>
-                                        <a href="tel:<?php echo htmlspecialchars($phone); ?>">
+                                        <a href="tel:<?php echo htmlspecialchars($phone); ?>"> <i class="flaticon-phone-call"></i>
                                             <?php echo htmlspecialchars($phone); ?>
                                         </a>
                                     <?php else: ?>
-                                        <span>Phone number not available</span>
+                                        <span>-</span>
+                                    <?php endif; ?>
+                                </li>
+
+                                 <li>
+                                    <?php 
+                                    $phone = isset($whatsapp) ? trim($whatsapp) : '';
+                                    if (!empty($phone)): ?>
+                                        <a href="https://wa.me/<?php echo htmlspecialchars($whatsapp); ?>"> <i class="flaticon-whatsapp"></i>
+                                            <?php echo htmlspecialchars($whatsapp); ?>
+                                        </a>
+                                    <?php else: ?>
+                                        <span>-</span>
                                     <?php endif; ?>
                                 </li>
                             </ul>
@@ -44,37 +55,36 @@
 
                     <div class="col-xl-3 col-lg-4 col-md-6">
                         <div class="footer-one-link">
-                            <h3>Services</h3>
+                            <h3>Services @ <br> CapitalKaro   </h3>
                             <ul>
                                 <li><i class="flaticon-right-arrow"></i><a href="personal-loan">Personal Loans</a></li>
                                 <li><i class="flaticon-right-arrow"></i><a href="business-loan">Business Loans</a></li>
-                                <li><i class="flaticon-right-arrow"></i><a href="mortgage-loan">Mortgage Loans</a></li>
-                                <li><i class="flaticon-right-arrow"></i><a href="emergency-loan">Emergency Loans</a></li>
-                                <li><i class="flaticon-right-arrow"></i><a href="student-loan">Student Loans</a></li>
-                                <li><i class="flaticon-right-arrow"></i><a href="small-business-loan">Small Business Loans</a></li>
+                                <li><i class="flaticon-right-arrow"></i><a href="instant-loan">Instant Loans</a></li>
+                                <li><i class="flaticon-right-arrow"></i><a href="home-loan">Home Loans</a></li>
+                                <li><i class="flaticon-right-arrow"></i><a href="credit-card">Credit Cards</a></li>
+                                <li><i class="flaticon-right-arrow"></i><a href="saving-account">Saving Accounts</a></li>
                             </ul>
                         </div>
                     </div>
 
                     <div class="col-xl-2 col-lg-4 col-md-6">
                         <div class="footer-one-link m-0">
-                            <h3>Page</h3>
+                            <h3>More @ CapitalKaro</h3>
                             <ul>
                                 <li><i class="flaticon-right-arrow"></i><a href="about">About Us</a></li>
                                 <li><i class="flaticon-right-arrow"></i><a href="faq">FAQS</a></li>
-                                <li><i class="flaticon-right-arrow"></i><a href="careers">Careers</a></li>
-                                <li><i class="flaticon-right-arrow"></i><a href="apply-loan">Apply a Loan</a></li>
+                                <li><i class="flaticon-right-arrow"></i><a href="#careers">Careers</a></li>
+                                <li><i class="flaticon-right-arrow"></i><a href="#apply-loan">Apply a Loan</a></li>
                                 <li><i class="flaticon-right-arrow"></i><a href="contact-us">Contact Us</a></li>
-                                <li><i class="flaticon-right-arrow"></i><a href="team">Meet The Team</a></li>
+                                <li><i class="flaticon-right-arrow"></i><a href="#team">Meet The Team</a></li>
                             </ul>
                         </div>
                     </div>
 
                     <div class="col-xl-4 col-md-6">
                         <div class="footer-One-subscribe">
-                            <h3>Subscribe</h3>
-                            <p>Stay up-to-date with the latest trends in digital marketing and receive exclusive
-                                tips and insights by subscribing to our newsletter.</p>
+                            <h3>Don't Miss an Update!</h3>
+                            <p>Subscribe to our newsletter and get the latest business insights, loan industry updates, and exclusive tips delivered directly to you.</p>
                             <form class="footer-One-subscribe-form" action="#">
                                 <input type="email" name="email" placeholder="Your Email Address" required>
                                 <button type="submit" class="btn btn-primary btn-small">
@@ -82,7 +92,7 @@
                                 </button>
                             </form>
                             <div class="footer-one-social-media">
-                                <h4>Social Icons</h4>
+                                <h4>Stay Tunned With - CapitalKaro </h4>
                                 <ul>
                                    
                                         <li><a href="<?php echo $facebook; ?>"><i class="fa-brands fa-facebook-f"></i></a></li>
@@ -103,16 +113,16 @@
         <div class="footer-lower">
             <div class="container">
                 <div class="row row-gap-3">
-                    <div class="col-md-6">
+                    <div class="col-md-8">
                         <div class="footer-copy-right-one">
                             <p><?php echo $copy_right; ?></p>
                         </div>
                     </div>
-                    <div class="col-md-6 text-center">
+                    <div class="col-md-4 text-center">
                         <div class="footer-buttom-link text-end">
                             <ul>
-                                <li><a href="#">Terms & Condition</a></li>
-                                <li><a href="#">Privacy policy</a></li>
+                                <li><a href="terms-and-conditions">Terms & Condition</a></li>
+                                <li><a href="privacy-policy">Privacy policy</a></li>
                             </ul>
                         </div>
                     </div>

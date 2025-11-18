@@ -1,29 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <?php include_once '_data/data.php'; ?>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo $site_name;?> || Contact-Us </title>
+    <title><?php echo $site_name; ?> || Contact-Us </title>
     <?php include '_inc/skin.php'; ?>
     <style>
         .contact-form-right .social-icon {
-    display: flex;
-    width: 40px;
-    height: 40px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    font-size: 16px;
-    background: #f5f5f5;
-    transition: 0.3s;
-}
+            display: flex;
+            width: 40px;
+            height: 40px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            font-size: 16px;
+            background: #f5f5f5;
+            transition: 0.3s;
+        }
 
-.contact-form-right .social-icon:hover {
-    background: #ff6f61;
-    color: #fff;
-}
-
+        .contact-form-right .social-icon:hover {
+            background: #ff6f61;
+            color: #fff;
+        }
     </style>
 </head>
 
@@ -31,9 +31,9 @@
     <div class="custom-cursor-one"></div>
     <div class="custom-cursor-two"></div>
 
-   <?php
-   include '_inc/pre-loader.php';
-   ?>
+    <?php
+    include '_inc/pre-loader.php';
+    ?>
 
     <!-- header start -->
     <?php include '_inc/header.php'; ?>
@@ -47,7 +47,7 @@
             </div>
             <ul class="bradcrumb">
                 <li><a href="index">Home</a></li>
-                <li><a href="#">Page</a></li>
+                <li><a href="#"><?php echo $site_name; ?></a></li>
                 <li><a href="#">Contacts Us</a></li>
             </ul>
         </div>
@@ -68,7 +68,7 @@
                         <!-- Dynamic Company Address -->
                         <div class="col-md-12">
                             <div class="contact-location">
-                                <img src="assets/images/contact-us/englend-flag.jpg" alt="flag">
+                                <img src="assets/images/contact-us/india-flag.jpg" alt="flag">
                                 <h5>Office Address</h5>
                             </div>
                             <p><?php echo $address; ?></p>
@@ -92,7 +92,7 @@
             <div class="row gutter-y-30">
 
                 <div class="col-lg-8">
-                    <div class="contact-form-inner">
+                    <div class="contact-form-inner" style="background:#fbfbfb !important;">
                         <form action="#">
                             <div class="inquiry-form-group-one">
                                 <label><i class="fa-regular fa-user"></i></label>
@@ -137,74 +137,74 @@
                 </div>
 
                 <!-- Right Side Contact Info -->
-    <div class="col-lg-4">
-    <div class="contact-form-right">
+                <div class="col-lg-4">
+                    <div class="contact-form-right">
 
-        <h3 class="mb-3">Say Hii to <?php echo $site_name; ?> 👋</h3>
+                        <h3 class="mb-3">Say Hii to <?php echo $site_name; ?> 👋</h3>
 
-        <img src="assets/images/contact-us/contact-from-image.jpg" alt="" class="img-fluid mb-3">
+                        <img src="assets/images/contact-us/contact-from-image.jpg" alt="" class="img-fluid mb-3">
 
-        <div class="contact-details mb-4">
-            <p>Have questions about your loan options? Our team is here to help!</p>
-            <p>We're committed to providing personalized support. Reach out today.</p>
-        </div>
+                        <div class="contact-details mb-4">
+                            <p>Have questions about your loan options? Our team is here to help!</p>
+                            <p>We're committed to providing personalized support. Reach out today.</p>
+                        </div>
 
-        <!-- Contact Details -->
-        <h4 class="mb-3">Contact Details</h4>
-        <ul class="contact-details-list" style="list-style:none; padding:0; margin:0 0 20px 0;">
-            <li class="d-flex align-items-center mb-2">
-                <i class="fa-solid fa-phone me-2 text-primary"></i>
-                <a href="tel:<?php echo $phone; ?>" class="text-white">
-                    <?php echo $phone; ?>
-                </a>
-            </li>
+                        <!-- Contact Details -->
+                        <h4 class="mb-3">Contact Details</h4>
+                        <ul class="contact-details-list" style="list-style:none; padding:0; margin:0 0 20px 0;">
+                            <li class="d-flex align-items-center mb-2">
+                                <i class="fa-solid fa-phone me-2 text-primary"></i>
+                                <a href="tel:<?php echo $phone; ?>" class="text-white">
+                                    <?php echo $phone; ?>
+                                </a>
+                            </li>
 
-            <li class="d-flex align-items-center mb-2">
-                <i class="fa-regular fa-envelope me-2 text-primary"></i>
-                <a href="mailto:<?php echo $support_email; ?>" class="text-white">
-                    <?php echo $support_email; ?>
-                </a>
-            </li>
-        </ul>
+                            <li class="d-flex align-items-center mb-2">
+                                <i class="fa-regular fa-envelope me-2 text-primary"></i>
+                                <a href="mailto:<?php echo $support_email; ?>" class="text-white">
+                                    <?php echo $support_email; ?>
+                                </a>
+                            </li>
+                        </ul>
 
-        <!-- Social Media -->
-        <h4 class="mb-3">Social Media</h4>
-        <ul class="contact-social-media d-flex gap-3" style="list-style:none; padding:0; margin:0;">
-            <?php if (!empty($facebook)) { ?>
-                <li>
-                    <a href="<?php echo $facebook; ?>" class="social-icon">
-                        <i class="fa-brands fa-facebook-f"></i>
-                    </a>
-                </li>
-            <?php } ?>
+                        <!-- Social Media -->
+                        <h4 class="mb-3">Social Media</h4>
+                        <ul class="contact-social-media d-flex gap-3" style="list-style:none; padding:0; margin:0;">
+                            <?php if (!empty($facebook)) { ?>
+                                <li>
+                                    <a href="<?php echo $facebook; ?>" class="social-icon">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                            <?php } ?>
 
-            <?php if (!empty($instagram)) { ?>
-                <li>
-                    <a href="<?php echo $instagram; ?>" class="social-icon">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                </li>
-            <?php } ?>
+                            <?php if (!empty($instagram)) { ?>
+                                <li>
+                                    <a href="<?php echo $instagram; ?>" class="social-icon">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                </li>
+                            <?php } ?>
 
-            <?php if (!empty($youtube)) { ?>
-                <li>
-                    <a href="<?php echo $youtube; ?>" class="social-icon">
-                        <i class="fa-brands fa-youtube"></i>
-                    </a>
-                </li>
-            <?php } ?>
+                            <?php if (!empty($youtube)) { ?>
+                                <li>
+                                    <a href="<?php echo $youtube; ?>" class="social-icon">
+                                        <i class="fa-brands fa-youtube"></i>
+                                    </a>
+                                </li>
+                            <?php } ?>
 
-            <?php if (!empty($whatsapp)) { ?>
-                <li>
-                    <a href="https://wa.me/<?php echo $whatsapp; ?>" class="social-icon">
-                        <i class="fa-brands fa-whatsapp"></i>
-                    </a>
-                </li>
-            <?php } ?>
-        </ul>
+                            <?php if (!empty($whatsapp)) { ?>
+                                <li>
+                                    <a href="https://wa.me/<?php echo $whatsapp; ?>" class="social-icon">
+                                        <i class="fa-brands fa-whatsapp"></i>
+                                    </a>
+                                </li>
+                            <?php } ?>
+                        </ul>
 
-    </div>
-</div>
+                    </div>
+                </div>
 
 
             </div>
@@ -212,9 +212,10 @@
     </div>
 
     <!-- footer -->
-    <?php 
-        include '_inc/footer.php';
-        include '_inc/footer-js.php';
+    <?php
+    include '_inc/footer.php';
+    include '_inc/footer-js.php';
     ?>
 </body>
+
 </html>

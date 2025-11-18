@@ -40,7 +40,7 @@
                     <div class="heading-box text-center">
                         <span class="heading-subtitle wow fadeInUp animated">🤝 CAREERS</span>
                         <h2 class="heading-title wow fadeInUp animated">
-                            Explore Exciting New Career Opportunities at Loanlift
+                            Explore Exciting New Career Opportunities at capitalkaro
                         </h2>
                     </div>
                 </div>
@@ -110,13 +110,13 @@
     <div class="careers-cta-section">
         <div class="container">
             <div class="careers-cta-title text-center">
-                <h2>Loanlift truly values work-life balance. We work hard for you and deliver, but at the end of the day you can switch off.</h2>
+                <h2><?= $site_name ?>truly values work-life balance. We work hard for you and deliver, but at the end of the day you can switch off.</h2>
             </div>
             <div class="ceo-details">
                 <img src="assets/images/about/ceo-image-small.png" alt="ceo-image">
                 <div class="ceo-details-inner">
                     <p>Zachary</p>
-                    <span>CEO, Loanlift</span>
+                    <span>CEO, capitalkaro</span>
                 </div>
             </div>
         </div>

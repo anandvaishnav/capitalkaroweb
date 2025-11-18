@@ -65,9 +65,9 @@ include '_inc/header.php';
                         <span class="heading-subtitle wow fadeInUp animated animated">🤝 ABOUT US</span>
                         <h2 class="heading-title wow fadeInUp animated animated">Our loans will fill your dreams come
                             true</h2>
-                        <p class="heading-details">At Loanlift, we are committed to delivering tailored financial
+                        <p class="heading-details">At capitalkaro, we are committed to delivering tailored financial
                             solutions designed to fit your
-                            individual needs. At Loanlift, we are committed to delivering.</p>
+                            individual needs. At capitalkaro, we are committed to delivering.</p>
                     </div>
                     <ul class="about-two-list">
                         <li><i class="flaticon-checked"></i> Translating the design into code using Webflow</li>
@@ -226,7 +226,7 @@ include '_inc/header.php';
                                 </div>
                                 <div class="services-two-details">
                                     <p>Securing a mortgage loan is one of the most significant financial decisions
-                                        you'll ever make. At LoanLift, we simplify the process by offering customized
+                                        you'll ever make. At capitalkaro, we simplify the process by offering customized
                                         mortgage solutions tailored to your unique needs. Whether you're purchasing your
                                         first home, refinancing, or investing in property, our expert team is here to
                                         guide you every step of the way. We provide competitive rates, flexible terms,
@@ -269,7 +269,7 @@ include '_inc/header.php';
                                 </div>
                                 <div class="services-two-details">
                                     <p>Life is unpredictable, and unexpected expenses can arise when we least expect
-                                        them. At LoanLift, we understand the urgency of such situations, which is why we
+                                        them. At capitalkaro, we understand the urgency of such situations, which is why we
                                         offer fast and reliable emergency loan solutions. Our emergency loans provide
                                         quick access to the funds you need, helping you cover medical bills, car
                                         repairs, or other unexpected costs without the stress of long approval
@@ -359,7 +359,7 @@ include '_inc/header.php';
                         </div>
                         <div class="testimonial-slider-one">
                             <div class="testimonial-one-item">
-                                <p>Signing the agreement and completing the documentation with Loanlift
+                                <p>Signing the agreement and completing the documentation with capitalkaro
                                     was seamless and straightforward. Their team guided me through every step, ensuring
                                     I understood all the details. I felt confident and well-informed throughout the
                                     entire
@@ -376,9 +376,9 @@ include '_inc/header.php';
                                 </div>
                             </div>
                             <div class="testimonial-one-item">
-                                <p>The process with Loanlift was incredibly smooth. From signing the agreement to
+                                <p>The process with <?= $site_name ?>was incredibly smooth. From signing the agreement to
                                     completing the documentation, their team made sure everything was clear and easy to
-                                    follow. I felt supported every step of the way.Working with Loanlift was a breeze!
+                                    follow. I felt supported every step of the way.Working with <?= $site_name ?>was a breeze!
                                     Their expert guidance made the paperwork simple.</p>
                                 <div class="testimonial-one-details-inner">
                                     <div class="testimonial-one-details">
@@ -392,9 +392,9 @@ include '_inc/header.php';
                                 </div>
                             </div>
                             <div class="testimonial-one-item">
-                                <p>The agreement process with Loanlift was hassle-free and efficient. Their team ensured
+                                <p>The agreement process with <?= $site_name ?>was hassle-free and efficient. Their team ensured
                                     I understood every detail and made the documentation straightforward, giving me
-                                    confidence throughout the entire journey, Loanlift’s team made the entire agreement
+                                    confidence throughout the entire journey, capitalkaro’s team made the entire agreement
                                     and documentation process seamless.</p>
                                 <div class="testimonial-one-details-inner">
                                     <div class="testimonial-one-details">
@@ -408,9 +408,9 @@ include '_inc/header.php';
                                 </div>
                             </div>
                             <div class="testimonial-one-item">
-                                <p>Loanlift made the entire loan process incredibly easy. Their team walked me through
+                                <p><?= $site_name ?>made the entire loan process incredibly easy. Their team walked me through
                                     every step, ensuring I understood all the terms. I felt completely confident and
-                                    well-supported throughout the process, Loanlift made the entire loan process
+                                    well-supported throughout the process, <?= $site_name ?>made the entire loan process
                                     incredibly easy.</p>
                                 <div class="testimonial-one-details-inner">
                                     <div class="testimonial-one-details">

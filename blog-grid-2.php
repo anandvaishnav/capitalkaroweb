@@ -184,7 +184,7 @@
                                 <p><a href="#">On 29 Sup 2024</a></p>
                             </div>
                             <div class="blog-item-details">
-                                <h5><a href="blog-details">How loanlift Supports Business Growth Through Tailored
+                                <h5><a href="blog-details">How <?= $site_name ?>Supports Business Growth Through Tailored
                                         Loans</a></h5>
                                 <a href="blog-details" class="btn-link-two"> <i class="flaticon-next"></i></a>
                             </div>

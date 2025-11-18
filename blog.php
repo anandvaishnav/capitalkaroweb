@@ -197,7 +197,7 @@
                                 <h4>Popular Tags</h4>
                                 <ul>
                                     <li class="active"><a href="#">Finance</a></li>
-                                    <li><a href="#">loanlift</a></li>
+                                    <li><a href="#">capitalkaro</a></li>
                                     <li><a href="#">Investors</a></li>
                                     <li><a href="#">Investors</a></li>
                                     <li><a href="#">Credit Score</a></li>

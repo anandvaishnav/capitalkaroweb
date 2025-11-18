@@ -52,10 +52,10 @@
                             <div class="banner-one-box">
                                 <div class="banner-one-box-inner">
                                     <i class="flaticon-money-bag"></i>
-                                    <h2>60+ Lenders </h2>
+                                    <h2>5% Interest</h2>
                                 </div>
-                                <p>Work confidently with 60+ trusted Bank and NBFC partners offering every major loan category.</p>
-
+                                <p>Discover our dependable loan solutions designed to empower your financial journey.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -82,13 +82,13 @@
                                     </div>
                                 </div>
                             </div>
-
                             <div class="banner-one-box">
                                 <div class="banner-one-box-inner">
                                     <i class="flaticon-money-bag"></i>
-                                    <h2>200+ Partners</h2>
+                                    <h2>5% Interest</h2>
                                 </div>
-                                <p>Join a fast-growing community of 200+ active partners building their own finance brands with us.</p>
+                                <p>Discover our dependable loan solutions designed to empower your financial journey.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -455,7 +455,7 @@
     </section>
     <!-- why-choos one end -->
     <!-- partner one start -->
-    <!-- <section class="partner-one">
+    <section class="partner-one">
         <div class="container-fluid">
             <div class="partner-slider-one">
                 <div class="partner-slider-one-item">
@@ -505,102 +505,102 @@
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
     <!-- partner one end -->
     <!-- process one start -->
-    <section class="process-one">
-        <div class="container">
-            <div class="row gutter-y-30">
+   <section class="process-one">
+    <div class="container">
+        <div class="row gutter-y-30">
 
-                <div class="col-lg-6">
-                    <div class="heading-box">
-                        <span class="heading-subtitle wow fadeInUp animated">🤝 HOW TO BECOME A DSA</span>
-                        <h2 class="heading-title wow fadeInUp animated">
-                            Simple Process to Start Working as a DSA Agent — Free of Cost
-                        </h2>
-                        <p class="heading-details">
-                            Anyone can become a DSA for free and start earning commissions by sourcing loan customers.
-                            Work with 60+ lenders across all major loan categories and build a long-term stable income.
-                        </p>
-                    </div>
+            <div class="col-lg-6">
+                <div class="heading-box">
+                    <span class="heading-subtitle wow fadeInUp animated">🤝 HOW TO BECOME A DSA</span>
+                    <h2 class="heading-title wow fadeInUp animated">
+                        Simple Process to Start Working as a DSA Agent — Free of Cost
+                    </h2>
+                    <p class="heading-details">
+                        Anyone can become a DSA for free and start earning commissions by sourcing loan customers. 
+                        Work with 60+ lenders across all major loan categories and build a long-term stable income.
+                    </p>
                 </div>
-
-                <div class="col-lg-6">
-                    <div class="process-one-video">
-                        <img src="assets/images/process-video-thamb.jpg" alt="video-thumb">
-                        <a href="https://www.youtube.com/watch?v=rzfmZC3kg3M" class="process-one-video-btn">
-                            <i class="fa-solid fa-play"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-xl-3 col-md-4">
-                    <div class="process-one-image">
-                        <img src="assets/images/process-image-1.jpg" alt="process-image">
-                    </div>
-                </div>
-
-                <div class="col-xl-9 col-md-8 align-self-center">
-                    <div class="process-item-one wow fadeInRight animated" data-wow-delay="500ms" data-wow-duration="2000ms">
-
-                        <div class="process-one-box">
-                            <div class="process-one-box-icon">
-                                <i class="flaticon-application"></i>
-                            </div>
-                            <div class="process-one-box-title">
-                                <h3>Register for Free</h3>
-                            </div>
-                            <div class="process-one-box-devider"></div>
-                            <div class="process-one-box-details">
-                                <p>Sign up online with basic details. No fee, no investment, and no documents required during registration.</p>
-                            </div>
-                        </div>
-
-                        <div class="process-one-box">
-                            <div class="process-one-box-icon">
-                                <i class="flaticon-contract"></i>
-                            </div>
-                            <div class="process-one-box-title">
-                                <h3>Submit Leads</h3>
-                            </div>
-                            <div class="process-one-box-devider"></div>
-                            <div class="process-one-box-details">
-                                <p>Add customer information for any loan category — Personal, Business, Home, Credit Card & more.</p>
-                            </div>
-                        </div>
-
-                        <div class="process-one-box">
-                            <div class="process-one-box-icon">
-                                <i class="flaticon-approval"></i>
-                            </div>
-                            <div class="process-one-box-title">
-                                <h3>Bank Processing</h3>
-                            </div>
-                            <div class="process-one-box-devider"></div>
-                            <div class="process-one-box-details">
-                                <p>Our team and partnered banks/NBFCs process your customer file and coordinate for approval.</p>
-                            </div>
-                        </div>
-
-                        <div class="process-one-box">
-                            <div class="process-one-box-icon">
-                                <i class="flaticon-money-1"></i>
-                            </div>
-                            <div class="process-one-box-title">
-                                <h3>Earn Commission</h3>
-                            </div>
-                            <div class="process-one-box-devider"></div>
-                            <div class="process-one-box-details">
-                                <p>Once the loan is disbursed, you receive your commission directly based on lender payout slabs.</p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
             </div>
+
+            <div class="col-lg-6">
+                <div class="process-one-video">
+                    <img src="assets/images/process-video-thamb.jpg" alt="video-thumb">
+                    <a href="https://www.youtube.com/watch?v=rzfmZC3kg3M" class="process-one-video-btn">
+                        <i class="fa-solid fa-play"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-md-4">
+                <div class="process-one-image">
+                    <img src="assets/images/process-image-1.jpg" alt="process-image">
+                </div>
+            </div>
+
+            <div class="col-xl-9 col-md-8 align-self-center">
+                <div class="process-item-one wow fadeInRight animated" data-wow-delay="500ms" data-wow-duration="2000ms">
+
+                    <div class="process-one-box">
+                        <div class="process-one-box-icon">
+                            <i class="flaticon-application"></i>
+                        </div>
+                        <div class="process-one-box-title">
+                            <h3>Register for Free</h3>
+                        </div>
+                        <div class="process-one-box-devider"></div>
+                        <div class="process-one-box-details">
+                            <p>Sign up online with basic details. No fee, no investment, and no documents required during registration.</p>
+                        </div>
+                    </div>
+
+                    <div class="process-one-box">
+                        <div class="process-one-box-icon">
+                            <i class="flaticon-contract"></i>
+                        </div>
+                        <div class="process-one-box-title">
+                            <h3>Submit Leads</h3>
+                        </div>
+                        <div class="process-one-box-devider"></div>
+                        <div class="process-one-box-details">
+                            <p>Add customer information for any loan category — Personal, Business, Home, Credit Card & more.</p>
+                        </div>
+                    </div>
+
+                    <div class="process-one-box">
+                        <div class="process-one-box-icon">
+                            <i class="flaticon-approval"></i>
+                        </div>
+                        <div class="process-one-box-title">
+                            <h3>Bank Processing</h3>
+                        </div>
+                        <div class="process-one-box-devider"></div>
+                        <div class="process-one-box-details">
+                            <p>Our team and partnered banks/NBFCs process your customer file and coordinate for approval.</p>
+                        </div>
+                    </div>
+
+                    <div class="process-one-box">
+                        <div class="process-one-box-icon">
+                            <i class="flaticon-money-1"></i>
+                        </div>
+                        <div class="process-one-box-title">
+                            <h3>Earn Commission</h3>
+                        </div>
+                        <div class="process-one-box-devider"></div>
+                        <div class="process-one-box-details">
+                            <p>Once the loan is disbursed, you receive your commission directly based on lender payout slabs.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- process one end -->
     <!-- case-studies one start -->
@@ -712,13 +712,312 @@
     </section>
     <!-- case-studies one end -->
     <!-- team one start -->
-
+    <section class="team-one">
+        <div class="team-shape-one-1">
+            <img src="assets/images/shape/team-shape-1.png" alt="shape">
+        </div>
+        <div class="team-shape-one-2">
+            <img src="assets/images/shape/team-shape-2.png" alt="shape">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-12 m-auto">
+                    <div class="heading-box text-center">
+                        <span class="heading-subtitle wow fadeInUp animated animated">🤝 OUR TEAM</span>
+                        <h2 class="heading-title wow fadeInUp animated animated">The team driving innovation and
+                            excellence in financial services</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row gutter-y-30">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="team-one-box">
+                        <a href="team-details" class="team-one-image">
+                            <img src="assets/images/team/team-1.jpg" alt="team-image">
+                        </a>
+                        <div class="team-one-details">
+                            <div class="team-one-details-inner">
+                                <h5>Joan Johnson</h5>
+                                <p>Chief Financial Officer</p>
+                                <div class="team-one-social-media">
+                                    <ul>
+                                        <li><a href="https://www.facebook.com/" target="_blank"><i
+                                                    class="fa-brands fa-facebook-f"></i></a></li>
+                                        <li><a href="https://www.instagram.com/" target="_blank"><i
+                                                    class="fa-brands fa-instagram"></i></a></li>
+                                        <li><a href="https://in.linkedin.com/" target="_blank"><i
+                                                    class="fa-brands fa-linkedin-in"></i></a></li>
+                                        <li><a href="https://x.com/" target="_blank"><i
+                                                    class="fa-brands fa-twitter"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="team-one-box">
+                        <a href="team-details" class="team-one-image">
+                            <img src="assets/images/team/team-2.jpg" alt="team-image">
+                        </a>
+                        <div class="team-one-details">
+                            <div class="team-one-details-inner">
+                                <h5>Donnie Southern</h5>
+                                <p>Head Of Operation</p>
+                                <div class="team-one-social-media">
+                                    <ul>
+                                        <li><a href="https://www.facebook.com/" target="_blank"><i
+                                                    class="fa-brands fa-facebook-f"></i></a></li>
+                                        <li><a href="https://www.instagram.com/" target="_blank"><i
+                                                    class="fa-brands fa-instagram"></i></a></li>
+                                        <li><a href="https://in.linkedin.com/" target="_blank"><i
+                                                    class="fa-brands fa-linkedin-in"></i></a></li>
+                                        <li><a href="https://x.com/" target="_blank"><i
+                                                    class="fa-brands fa-twitter"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="team-one-box">
+                        <a href="team-details" class="team-one-image">
+                            <img src="assets/images/team/team-3.jpg" alt="team-image">
+                        </a>
+                        <div class="team-one-details">
+                            <div class="team-one-details-inner">
+                                <h5>Alexandra Southern</h5>
+                                <p>Branch Manager</p>
+                                <div class="team-one-social-media">
+                                    <ul>
+                                        <li><a href="https://www.facebook.com/" target="_blank"><i
+                                                    class="fa-brands fa-facebook-f"></i></a></li>
+                                        <li><a href="https://www.instagram.com/" target="_blank"><i
+                                                    class="fa-brands fa-instagram"></i></a></li>
+                                        <li><a href="https://in.linkedin.com/" target="_blank"><i
+                                                    class="fa-brands fa-linkedin-in"></i></a></li>
+                                        <li><a href="https://x.com/" target="_blank"><i
+                                                    class="fa-brands fa-twitter"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="team-one-box">
+                        <a href="team-details" class="team-one-image">
+                            <img src="assets/images/team/team-4.jpg" alt="team-image">
+                        </a>
+                        <div class="team-one-details">
+                            <div class="team-one-details-inner">
+                                <h5>Alexandra Southern</h5>
+                                <p>Regional Manager</p>
+                                <div class="team-one-social-media">
+                                    <ul>
+                                        <li><a href="https://www.facebook.com/" target="_blank"><i
+                                                    class="fa-brands fa-facebook-f"></i></a></li>
+                                        <li><a href="https://www.instagram.com/" target="_blank"><i
+                                                    class="fa-brands fa-instagram"></i></a></li>
+                                        <li><a href="https://in.linkedin.com/" target="_blank"><i
+                                                    class="fa-brands fa-linkedin-in"></i></a></li>
+                                        <li><a href="https://x.com/" target="_blank"><i
+                                                    class="fa-brands fa-twitter"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- team one end -->
     <!-- testimonial one start -->
-
+    <section class="testimonial-one white-font">
+        <div class="container">
+            <div class="row gutter-y-30">
+                <div class="col-lg-4 col-md-6 col-sm-10 col-12 ms-auto me-auto">
+                    <div class="testimonial-video-one">
+                        <img src="assets/images/blog/blog-three-1.jpg" alt="testimonial-video-thamb">
+                        <a href="https://www.youtube.com/watch?v=rzfmZC3kg3M" class="testimonial-video-btn-one"><i
+                                class="fa-solid fa-play"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-8 align-self-center">
+                    <div class="testimonial-one-right">
+                        <div class="heading-box heading-white">
+                            <span class="heading-subtitle wow fadeInUp animated animated">🤝 SUCCESS STORY</span>
+                            <h2 class="heading-title wow fadeInUp animated animated">Customer experiences with us</h2>
+                        </div>
+                        <div class="testimonial-slider-one">
+                            <div class="testimonial-one-item">
+                                <p>Signing the agreement and completing the documentation with capitalkaro
+                                    was seamless and straightforward. Their team guided me through every step, ensuring
+                                    I understood all the details. I felt confident and well-informed throughout the
+                                    entire
+                                    process.</p>
+                                <div class="testimonial-one-details-inner">
+                                    <div class="testimonial-one-details">
+                                        <img src="assets/images/testimonial/testimonial-1.png" alt="">
+                                        <div>
+                                            <h5 class="white-font">Michael Smith</h5>
+                                            <p class="white-font m-0">Satisfied Client</p>
+                                        </div>
+                                    </div>
+                                    <i class="flaticon-quote-1"></i>
+                                </div>
+                            </div>
+                            <div class="testimonial-one-item">
+                                <p>The process with <?= $site_name ?>was incredibly smooth. From signing the agreement to
+                                    completing the documentation, their team made sure everything was clear and easy to
+                                    follow. I felt supported every step of the way.Working with <?= $site_name ?>was a breeze!
+                                    Their expert guidance made the paperwork simple.</p>
+                                <div class="testimonial-one-details-inner">
+                                    <div class="testimonial-one-details">
+                                        <img src="assets/images/testimonial/testimonial-2.png" alt="">
+                                        <div>
+                                            <h5 class="white-font">Emily Martin</h5>
+                                            <p class="white-font m-0">Satisfied Client</p>
+                                        </div>
+                                    </div>
+                                    <i class="flaticon-quote-1"></i>
+                                </div>
+                            </div>
+                            <div class="testimonial-one-item">
+                                <p>The agreement process with <?= $site_name ?>was hassle-free and efficient. Their team ensured
+                                    I understood every detail and made the documentation straightforward, giving me
+                                    confidence throughout the entire journey, capitalkaro’s team made the entire agreement
+                                    and documentation process seamless.</p>
+                                <div class="testimonial-one-details-inner">
+                                    <div class="testimonial-one-details">
+                                        <img src="assets/images/testimonial/testimonial-3.png" alt="">
+                                        <div>
+                                            <h5 class="white-font">Brian Clark</h5>
+                                            <p class="white-font m-0">Satisfied Client</p>
+                                        </div>
+                                    </div>
+                                    <i class="flaticon-quote-1"></i>
+                                </div>
+                            </div>
+                            <div class="testimonial-one-item">
+                                <p><?= $site_name ?>made the entire loan process incredibly easy. Their team walked me through
+                                    every step, ensuring I understood all the terms. I felt completely confident and
+                                    well-supported throughout the process, <?= $site_name ?>made the entire loan process
+                                    incredibly easy.</p>
+                                <div class="testimonial-one-details-inner">
+                                    <div class="testimonial-one-details">
+                                        <img src="assets/images/testimonial/testimonial-4.png" alt="">
+                                        <div>
+                                            <h5 class="white-font">Ashley Harris</h5>
+                                            <p class="white-font m-0">Satisfied Client</p>
+                                        </div>
+                                    </div>
+                                    <i class="flaticon-quote-1"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- testimonial one end -->
     <!-- blog one start -->
-
+    <section class="blog-one">
+        <div class="blog-shape-one-1">
+            <img src="assets/images/shape/blog-shape.png" alt="shape">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 m-auto">
+                    <div class="heading-box text-center">
+                        <span class="heading-subtitle wow fadeInUp animated animated">🤝 NEWS & TIPS</span>
+                        <h2 class="heading-title wow fadeInUp animated animated">Recent News & Blog</h2>
+                        <p class="heading-details">Discover effective strategies for managing your loan repayments and
+                            staying on track
+                            financially. Our tips will help you navigate repayment challenges and achieve financial
+                            stability.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row gutter-y-30">
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-one-box">
+                        <div class="blog-one-image">
+                            <a href="blog-details">
+                                <img src="assets/images/blog/blog-1.jpg" alt="blog-image">
+                            </a>
+                            <a href="#" class="blog-one-tag">
+                                <span>LOAN</span>
+                            </a>
+                        </div>
+                        <div class="blog-one-meta">
+                            <p><a href="#">By Deni </a></p>
+                            <p><a href="#">On 29 Sup 2024</a></p>
+                        </div>
+                        <div class="blog-one-details">
+                            <h5><a href="blog-details">Maximizing ROI: how data-driven strategies can transform
+                                    your
+                                    business</a></h5>
+                            <a href="blog-details" class="btn-link"><span>Read More</span><i
+                                    class="flaticon-next"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-one-box">
+                        <div class="blog-one-image">
+                            <a href="blog-details">
+                                <img src="assets/images/blog/blog-3.jpg" alt="blog-image">
+                            </a>
+                            <a href="#" class="blog-one-tag">
+                                <span> FUNDING</span>
+                            </a>
+                        </div>
+                        <div class="blog-one-meta">
+                            <p><a href="#">By Jhon </a></p>
+                            <p><a href="#">On 05 Jan 2024</a></p>
+                        </div>
+                        <div class="blog-one-details">
+                            <h5><a href="blog-details">How to successfully manage your loan repayments: tips and
+                                    strategies</a></h5>
+                            <a href="blog-details" class="btn-link"><span>Read More</span><i
+                                    class="flaticon-next"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-one-box">
+                        <div class="blog-one-image">
+                            <a href="blog-details">
+                                <img src="assets/images/blog/blog-2.jpg" alt="blog-image">
+                            </a>
+                            <a href="#" class="blog-one-tag">
+                                <span> FINANACIAL</span>
+                            </a>
+                        </div>
+                        <div class="blog-one-meta">
+                            <p><a href="#">By Elei </a></p>
+                            <p><a href="#">On 18 Feb 2024</a></p>
+                        </div>
+                        <div class="blog-one-details">
+                            <h5><a href="blog-details">The impact of credit scores on loan approval: what you need
+                                    to
+                                    know</a></h5>
+                            <a href="blog-details" class="btn-link"><span>Read More</span><i
+                                    class="flaticon-next"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- blog one end -->
     <!-- cta one start -->
     <section class="cta-one">

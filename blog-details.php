@@ -55,17 +55,17 @@
                     </div>
                     <div class="blog-block">
                         <div class="single-blog-details">
-                            <h3>Achieving Financial Freedom: Loanlift Proven Strategies</h3>
-                            <p>At loanlift, we are dedicated to helping our clients reach this milestone through our
+                            <h3>Achieving Financial Freedom: <?= $site_name ?>Proven Strategies</h3>
+                            <p>At capitalkaro, we are dedicated to helping our clients reach this milestone through our
                                 proven strategies and tailored financial solutions. Achieving financial freedom involves
                                 more than just managing your finances; it requires a comprehensive approach that
-                                addresses your unique needs and goals. In this blog, we’ll explore how loanlift can
+                                addresses your unique needs and goals. In this blog, we’ll explore how <?= $site_name ?>can
                                 guide you toward achieving financial freedom with practical steps and effective
                                 strategies.</p>
                             <p>We work closely with you to develop a comprehensive financial plan that aligns with your
                                 objectives. This includes budgeting, forecasting, and identifying key financial metrics
                                 to track progress. By setting clear goals and creating a strategic plan, you can make
-                                informed decisions that drive financial growth. Our team at loanlift is here to support
+                                informed decisions that drive financial growth. Our team at <?= $site_name ?>is here to support
                                 you every step of the way, helping you navigate your path to financial freedom with
                                 confidence and clarity.</p>
                         </div>
@@ -86,7 +86,7 @@
                             <p>We work closely with you to develop a comprehensive financial plan that aligns with your
                                 objectives. This includes budgeting, forecasting, and identifying key financial metrics
                                 to track progress. By setting clear goals and creating a strategic plan, you can make
-                                informed decisions that drive financial growth. Our team at loanlift is here to support
+                                informed decisions that drive financial growth. Our team at <?= $site_name ?>is here to support
                                 you every step of the way, helping you navigate your path to financial freedom with
                                 confidence and clarity.</p>
                         </div>
@@ -94,7 +94,7 @@
                     <div class="blog-block">
                         <div class="single-blog-quoght">
                             <p>A dedicated team of 30 professionals highlights the significant effort is putting
-                                innovative lending solutions.these shows that LoanLift is fully committed to making it a
+                                innovative lending solutions.these shows that <?= $site_name ?>is fully committed to making it a
                                 reality.</p>
                             <div class="single-blog-quoght-author">
                                 <span>Johnny M. Martin</span>
@@ -261,7 +261,7 @@
                                 <h4>Popular Tags</h4>
                                 <ul>
                                     <li class="active"><a href="#">Finance</a></li>
-                                    <li><a href="#">loanlift</a></li>
+                                    <li><a href="#">capitalkaro</a></li>
                                     <li><a href="#">Investors</a></li>
                                     <li><a href="#">Investors</a></li>
                                     <li><a href="#">Credit Score</a></li>
