@@ -46,14 +46,14 @@
  <!-- OG TAGS -->
  <meta property="og:title" content="CapitalKaro – White-Label Loan CRM & DSA Platform">
  <meta property="og:description" content="Start your own loan brand with CapitalKaro’s White-Label CRM and DSA Platform. Manage leads, automate workflow, and grow your financial business.">
- <meta property="og:image" content="https://capitalkaro.com/assets/images/logo.png">
+ <meta property="og:image" content="https://capitalkaro.com/assets/images/summary_large_image.jpg">
  <meta property="og:type" content="website">
  <meta property="og:url" content="https://capitalkaro.com/">
 
  <!-- TWITTER TAGS -->
  <meta name="twitter:title" content="CapitalKaro – Loan CRM & White-Label DSA Platform">
  <meta name="twitter:description" content="Build and scale your loan business with our white-label CRM and advanced loan service tools.">
- <meta name="twitter:image" content="https://capitalkaro.com/assets/images/logo.png">
+ <meta name="twitter:image" content="https://capitalkaro.com/assets/images/summary_large_image.jpg">
  <meta name="twitter:card" content="summary_large_image">
 
  <!-- ADDITIONAL SEO TAGS -->
