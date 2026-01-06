@@ -3,10 +3,14 @@
 
 <head>
     <?php include_once '_data/data.php'; ?>
+
+    <?php include '_inc/seo.php'; ?>  <!-- dynamic title is generated here -->
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo $site_name; ?> || Contact-Us </title>
+
     <?php include '_inc/skin.php'; ?>
+</head>
     <style>
         .contact-form-right .social-icon {
             display: flex;

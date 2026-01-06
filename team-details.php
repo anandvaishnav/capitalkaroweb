@@ -28,10 +28,12 @@ if (!$member) {
 <html lang="en">
 
 <head>
+    <?php include '_inc/seo.php'; ?>  <!-- dynamic title is generated here -->
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo
-    $site_name; ?> || <?= $member['name'] ?></title>
+
+    <?php include '_inc/skin.php'; ?>
 </head>
 
 <body class="custom-cursor">

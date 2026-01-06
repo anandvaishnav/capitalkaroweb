@@ -1,316 +1,371 @@
+<?php
+include_once '_data/data.php';
+include_once '_data/db.php';
+
+/* ----------------------------------------------------
+    GET SLUG
+---------------------------------------------------- */
+$url = $_SERVER['REQUEST_URI'];
+$parts = explode('/', trim($url, '/'));
+$slug = end($parts);
+
+if (!$slug || $slug == 'blog-details') {
+    die("<h2>Invalid blog URL</h2>");
+}
+
+/* ----------------------------------------------------
+    FETCH POST
+---------------------------------------------------- */
+$stmt = $conn->prepare("
+    SELECT p.*, c.name AS category_name 
+    FROM posts p
+    LEFT JOIN categories c ON p.category_id = c.id
+    WHERE p.slug = ? AND p.status = 'published'
+    LIMIT 1
+");
+$stmt->execute([$slug]);
+$post = $stmt->fetch(PDO::FETCH_ASSOC);
+
+if (!$post) {
+    include '404.php';
+    exit;
+}
+
+/* ----------------------------------------------------
+    UPDATE VIEWS
+---------------------------------------------------- */
+$conn->prepare("UPDATE posts SET views = views + 1 WHERE id = ?")
+      ->execute([$post['id']]);
+
+/* ----------------------------------------------------
+    PREV / NEXT
+---------------------------------------------------- */
+$prevStmt = $conn->prepare("
+    SELECT title, slug FROM posts 
+    WHERE id < ? AND status='published'
+    ORDER BY id DESC LIMIT 1
+");
+$prevStmt->execute([$post['id']]);
+$prev = $prevStmt->fetch(PDO::FETCH_ASSOC);
+
+$nextStmt = $conn->prepare("
+    SELECT title, slug FROM posts 
+    WHERE id > ? AND status='published'
+    ORDER BY id ASC LIMIT 1
+");
+$nextStmt->execute([$post['id']]);
+$next = $nextStmt->fetch(PDO::FETCH_ASSOC);
+
+/* ----------------------------------------------------
+    RECENT POSTS
+---------------------------------------------------- */
+$recentStmt = $conn->query("
+    SELECT title, slug, featured_image, created_at 
+    FROM posts
+    WHERE status='published'
+    ORDER BY id DESC LIMIT 4
+");
+$recentPosts = $recentStmt->fetchAll(PDO::FETCH_ASSOC);
+
+/* ----------------------------------------------------
+    CATEGORIES
+---------------------------------------------------- */
+$catStmt = $conn->query("
+    SELECT c.id, c.name, COUNT(p.id) AS total_posts
+    FROM categories c
+    LEFT JOIN posts p ON p.category_id = c.id AND p.status='published'
+    GROUP BY c.id
+    ORDER BY c.name ASC
+");
+$categoriesList = $catStmt->fetchAll(PDO::FETCH_ASSOC);
+
+/* ----------------------------------------------------
+    POST TAGS (NEW: Tags specific to this post)
+---------------------------------------------------- */
+$tagStmt = $conn->prepare("
+    SELECT t.name, t.slug 
+    FROM tags t
+    JOIN post_tags pt ON t.id = pt.tag_id
+    WHERE pt.post_id = ?
+    ORDER BY t.name ASC
+");
+$tagStmt->execute([$post['id']]);
+$postTags = $tagStmt->fetchAll(PDO::FETCH_ASSOC);
+
+/* ----------------------------------------------------
+    POPULAR TAGS (NEW: For Sidebar)
+---------------------------------------------------- */
+$popularTagsStmt = $conn->query("
+    SELECT t.name, t.slug, COUNT(pt.post_id) AS total_posts 
+    FROM tags t 
+    JOIN post_tags pt ON t.id = pt.tag_id 
+    JOIN posts p ON pt.post_id = p.id AND p.status = 'published'
+    GROUP BY t.id
+    ORDER BY total_posts DESC 
+    LIMIT 15
+");
+$popularTagsList = $popularTagsStmt->fetchAll(PDO::FETCH_ASSOC);
+?>
 <!DOCTYPE html>
 <html lang="en">
-<?php include_once '_data/data.php'; ?>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo $site_name; ?> || Blog Details</title>
-    <?php
-    include '_inc/skin.php';
-    ?>
+    <?php include '_inc/seo.php'; ?>
+    <?php include '_inc/skin.php'; ?>
+    <style>
+        /* === NEW CSS FOR TAGS AND RECENT NEWS FIX === */
+        
+        /* Post Tags Styling */
+        .single-post-tags { 
+            margin-top: 20px;
+            padding: 15px 0;
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .single-post-tags span { 
+            font-weight: bold;
+            margin-right: 15px;
+            color: #333;
+            flex-shrink: 0;
+        }
+        .tag-list-inline {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .tag-list-inline a {
+            display: inline-block;
+            background: #f1f1f1;
+            padding: 5px 10px;
+            margin: 5px 5px 5px 0;
+            border-radius: 4px;
+            text-decoration: none;
+            color: #555;
+            transition: background 0.3s;
+        }
+        .tag-list-inline a:hover {
+            background: #ff5722;
+            color: #fff;
+        }
+        
+        /* Sidebar Tags Widget Styling */
+        .tag-widget {
+            padding: 30px;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            margin-top: 30px; 
+        }
+        .tag-widget .tag-list-sidebar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            list-style: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+        .tag-widget .tag-list-sidebar li {
+            background: #f8f8f8;
+            border-radius: 5px;
+            padding: 5px 10px;
+            font-size: 14px;
+            line-height: 1;
+        }
+        .tag-widget .tag-list-sidebar li a {
+            color: #494949;
+            text-decoration: none;
+        }
+
+        /* RECENT NEWS OVERFLOW FIX */
+        .recent-blog-widget-item { 
+            display: flex; 
+            align-items: center; 
+            gap: 12px; 
+            margin-bottom: 15px; 
+        }
+        .recent-blog-widget-item img { 
+            width: 75px; 
+            height: 75px; 
+            object-fit: cover; 
+            border-radius: 8px; 
+            flex-shrink: 0;
+        }
+        .recent-blog-widget-item-title {
+            flex-grow: 1; 
+            min-width: 0; /* Ensures content respects container width */
+        }
+        .recent-blog-widget-item-title a {
+            /* Truncate the title with ellipsis */
+            display: block; 
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis; 
+            max-width: 100%; 
+        }
+        /* ==================================== */
+    </style>
 </head>
 
 <body class="custom-cursor">
-    <div class="custom-cursor-one"></div>
-    <div class="custom-cursor-two"></div>
-    <?php
-    include '_inc/pre-loader.php';
-    ?>
-    <!-- header start -->
-    <?php 
- include '_inc/header.php';
- ?>
-    <!-- header end -->
-    <!-- inner-page hero start -->
-    <div class="inner-page-hero" style="background-image: url(assets/images/background/blog-hero-bg.jpg);">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-10 m-auto">
-                    <div class="hero-heading-title">
-                        <h2>A Beginner’s Guide to Securing Your First Loan</h2>
-                    </div>
-                    <ul class="bradcrumb">
-                        <li><a href="index">Home</a></li>
-                        <li><a href="blog">Blog </a></li>
-                        <li><a href="#">Blog Details</a></li>
-                    </ul>
+
+<?php include '_inc/pre-loader.php'; ?>
+<?php include '_inc/header.php'; ?>
+
+<div class="inner-page-hero" style="background-image: url(assets/images/background/blog-hero-bg.jpg);">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-10 m-auto">
+                <div class="hero-heading-title">
+                    <h2><?= $post['title'] ?></h2>
                 </div>
+                <ul class="bradcrumb">
+                    <li><a href="/index">Home</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><?= $post['title'] ?></li>
+                </ul>
             </div>
         </div>
     </div>
-    <!-- inner-page hero end -->
-    <!-- team detail start  -->
-    <div class="blog-list-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8">
-                    <div class="blog-block">
-                        <div class="single-blog-image">
-                            <img src="assets/images/blog/single-blog-image-1.jpg" alt="blog-image">
-                        </div>
-                        <div class="blog-item-meta">
-                            <p><a href="#">By Deni</a></p>
-                            <p><a href="#">On 25 Dec 2024</a></p>
-                        </div>
+</div>
+
+<div class="blog-list-section">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-8">
+
+                <div class="blog-block">
+                    <div class="single-blog-image">
+                        <img src="../../blog-admin-capitalkaro/uploads/<?= $post['featured_image'] ?>" 
+                             alt="<?= $post['title'] ?>">
                     </div>
-                    <div class="blog-block">
-                        <div class="single-blog-details">
-                            <h3>Achieving Financial Freedom: <?= $site_name ?>Proven Strategies</h3>
-                            <p>At capitalkaro, we are dedicated to helping our clients reach this milestone through our
-                                proven strategies and tailored financial solutions. Achieving financial freedom involves
-                                more than just managing your finances; it requires a comprehensive approach that
-                                addresses your unique needs and goals. In this blog, we’ll explore how <?= $site_name ?>can
-                                guide you toward achieving financial freedom with practical steps and effective
-                                strategies.</p>
-                            <p>We work closely with you to develop a comprehensive financial plan that aligns with your
-                                objectives. This includes budgeting, forecasting, and identifying key financial metrics
-                                to track progress. By setting clear goals and creating a strategic plan, you can make
-                                informed decisions that drive financial growth. Our team at <?= $site_name ?>is here to support
-                                you every step of the way, helping you navigate your path to financial freedom with
-                                confidence and clarity.</p>
-                        </div>
-                    </div>
-                    <div class="blog-block">
-                        <div class="single-blog-image-two">
-                            <div>
-                                <img src="assets/images/blog/single-blog-image-2.jpg" alt="blog-image">
-                            </div>
-                            <div>
-                                <img src="assets/images/blog/single-blog-image-3.jpg" alt="blog-image">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="blog-block">
-                        <div class="single-blog-details">
-                            <h3>The Impact of Credit Scores on Your Loan Application</h3>
-                            <p>We work closely with you to develop a comprehensive financial plan that aligns with your
-                                objectives. This includes budgeting, forecasting, and identifying key financial metrics
-                                to track progress. By setting clear goals and creating a strategic plan, you can make
-                                informed decisions that drive financial growth. Our team at <?= $site_name ?>is here to support
-                                you every step of the way, helping you navigate your path to financial freedom with
-                                confidence and clarity.</p>
-                        </div>
-                    </div>
-                    <div class="blog-block">
-                        <div class="single-blog-quoght">
-                            <p>A dedicated team of 30 professionals highlights the significant effort is putting
-                                innovative lending solutions.these shows that <?= $site_name ?>is fully committed to making it a
-                                reality.</p>
-                            <div class="single-blog-quoght-author">
-                                <span>Johnny M. Martin</span>
-                                <i class="flaticon-quote"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="blog-block">
-                        <div class="single-blog-link">
-                            <ul class="single-blog-tag">
-                                <li>Tags :</li>
-                                <li><a href="#">Loan</a></li>
-                                <li><a href="#">Money</a></li>
-                                <li><a href="#">2024</a></li>
-                            </ul>
-                            <ul class="single-blog-social-media">
-                                <li>Share :</li>
-                                <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a></li>
-                                <li><a href="https://x.com/"><i class="fa-brands fa-twitter"></i></a></li>
-                                <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
-                                <li><a href="https://in.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="blog-block">
-                        <div class="single-blog-pagination">
-                            <div class="single-blog-pagination-pre">
-                                <a href="#" class="btn-link-two"><i class="fa-solid fa-arrow-left"></i></a>
-                                <h5><a class="single-blog-pagination-link" href="#">How to Use Business <br> Loans to
-                                        Expand Your</a></h5>
-                            </div>
-                            <div class="single-blog-pagination-next">
-                                <h5><a class="single-blog-pagination-link" href="#">Innovative Financing <br> Solutions
-                                        for Startups</a></h5>
-                                <a href="#" class="btn-link-two"><i class="fa-solid fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="blog-block">
-                        <div class="comment-widget">
-                            <h3>Comments</h3>
-                            <div class="comment-widget-item">
-                                <img src="assets/images/blog/single-blog-image-3.png" alt="comment-image">
-                                <div class="comment-widget-item-details">
-                                    <div class="comment-meta">
-                                        <p>William. L</p>
-                                        <span>August 24, 2024</span>
-                                    </div>
-                                    <div class="comment-text">
-                                        <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse
-                                            molestiae consequatur qui dolorem eum fugiat voluptas</p>
-                                    </div>
-                                    <a href="#" class="comment-reply">Reply <i class="flaticon-next"></i></a>
-                                </div>
-                            </div>
-                            <div class="comment-widget-item reply">
-                                <img src="assets/images/blog/single-blog-image-4.png" alt="comment-image">
-                                <div class="comment-widget-item-details">
-                                    <div class="comment-meta">
-                                        <p>Alina. R</p>
-                                        <span>August 28, 2024</span>
-                                    </div>
-                                    <div class="comment-text">
-                                        <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse
-                                            molestiae consequatur qui dolorem eum fugiat voluptas</p>
-                                    </div>
-                                    <a href="#" class="comment-reply">Reply <i class="flaticon-next"></i></a>
-                                </div>
-                            </div>
-                            <div class="comment-widget-item">
-                                <img src="assets/images/blog/single-blog-image-5.png" alt="comment-image">
-                                <div class="comment-widget-item-details">
-                                    <div class="comment-meta">
-                                        <p>Jackson. K</p>
-                                        <span>September 05, 2024</span>
-                                    </div>
-                                    <div class="comment-text">
-                                        <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse
-                                            molestiae consequatur qui dolorem eum fugiat voluptas</p>
-                                    </div>
-                                    <a href="#" class="comment-reply">Reply <i class="flaticon-next"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="comment-form-widget">
-                        <h3>Leave A Reply</h3>
-                        <form action="#">
-                            <div class="comment-form-group-one">
-                                <div class="comment-form-group-one-inner">
-                                    <label><i class="fa-regular fa-user"></i></label>
-                                    <input type="text" class="form-control" placeholder="Full Name" required="">
-                                </div>
-                                <div class="comment-form-group-one-inner">
-                                    <label><i class="fa-solid fa-phone"></i></label>
-                                    <input type="number" class="form-control" placeholder="Phone" required="">
-                                </div>
-                            </div>
-                            <div class="comment-form-group-one">
-                                <label><i class="fa-regular fa-envelope"></i></label>
-                                <input type="email" name="email" class="form-control" placeholder="Email Address"
-                                    required="">
-                            </div>
-                            <div class="comment-form-group-one">
-                                <label><i class="fa-solid fa-message"></i></label>
-                                <textarea name="comment" rows="4" class="form-control" placeholder="Comments"
-                                    required=""></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-secondary">Leave A comment<i
-                                    class="flaticon-next"></i></button>
-                        </form>
+                    <div class="blog-item-meta">
+                        <p>By <?= htmlspecialchars($post['author']) ?></p>
+                        <p><?= date("d M Y", strtotime($post['created_at'])) ?></p>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="blog-sidebar stcky">
-                        <div class="blog-block">
-                            <div class="blog-serch-widget">
-                                <form action="#">
-                                    <input type="search" placeholder="Search ">
-                                    <button type="submit"><i class="flaticon-search-interface-symbol"></i></button>
-                                </form>
-                            </div>
+
+                <div class="blog-block">
+                    <div class="single-blog-details">
+                        <?= $post['content'] ?>
+                    </div>
+                </div>
+
+                <?php if (!empty($postTags)): ?>
+                <div class="blog-block">
+                    <div class="single-post-tags">
+                        <span>Tags:</span>
+                        <div class="tag-list-inline">
+                            <?php foreach ($postTags as $tag): ?>
+                                <a href="/blog?tag=<?= urlencode($tag['slug']) ?>">
+                                    <?= htmlspecialchars($tag['name']) ?>
+                                </a>
+                            <?php endforeach; ?>
                         </div>
-                        <div class="blog-block">
-                            <div class="category-widget">
-                                <h4>Category</h4>
-                                <ul>
-                                    <li class="active"><a href="#">Home Loan</a> <span>(05)</span></li>
-                                    <li><a href="#">Wedding Loan</a> <span>(09)</span></li>
-                                    <li><a href="#">Mortgage Loan</a> <span>(04)</span></li>
-                                    <li><a href="#">Business Loan</a> <span>(06)</span></li>
-                                    <li><a href="#">Education loan</a> <span>(08)</span></li>
-                                </ul>
-                            </div>
+                    </div>
+                </div>
+                <?php endif; ?>
+                <div class="blog-block">
+                    <div class="single-blog-pagination">
+
+                        <?php if ($prev): ?>
+                        <div class="single-blog-pagination-pre">
+                            <a href="/blog/<?= $prev['slug'] ?>" class="btn-link-two">
+                                <i class="fa-solid fa-arrow-left"></i>
+                            </a>
+                            <h5>
+                                <a href="/blog/<?= $prev['slug'] ?>"><?= $prev['title'] ?></a>
+                            </h5>
                         </div>
-                        <div class="blog-block">
-                            <div class="recent-blog-widget">
-                                <h4>Recent News</h4>
-                                <div class="recent-blog-widget-item">
-                                    <img src="assets/images/blog/blog-standard-image-5.jpg" alt="blog-image">
-                                    <div class="recent-blog-widget-item-title">
-                                        <span>September 20, 2023</span>
-                                        <a href="#">Securing Your Dream Home: A Complete Guide to Home </a>
-                                    </div>
-                                </div>
-                                <div class="recent-blog-widget-item">
-                                    <img src="assets/images/blog/blog-standard-image-6.jpg" alt="blog-image">
-                                    <div class="recent-blog-widget-item-title">
-                                        <span>September 20, 2023</span>
-                                        <a href="#">Fueling Business Growth: How to Choose the Right Business </a>
-                                    </div>
-                                </div>
-                                <div class="recent-blog-widget-item">
-                                    <img src="assets/images/blog/blog-standard-image-7.jpg" alt="blog-image">
-                                    <div class="recent-blog-widget-item-title">
-                                        <span>September 20, 2023</span>
-                                        <a href="#">Your Dream Wedding, Within reach Exploring Wedding Loan</a>
-                                    </div>
+                        <?php endif; ?>
+
+                        <?php if ($next): ?>
+                        <div class="single-blog-pagination-next">
+                            <h5>
+                                <a href="/blog/<?= $next['slug'] ?>"><?= $next['title'] ?></a>
+                            </h5>
+                            <a href="/blog/<?= $next['slug'] ?>" class="btn-link-two">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                        <?php endif; ?>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-lg-4">
+                <div class="blog-sidebar stcky">
+
+                    <div class="blog-block">
+                        <div class="blog-serch-widget">
+                            <form action="/blog" method="GET"> 
+                                <input type="search" name="q" placeholder="Search posts...">
+                                <button type="submit"><i class="flaticon-search-interface-symbol"></i></button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="blog-block">
+                        <div class="category-widget">
+                            <h4>Categories</h4>
+                            <ul>
+                                <?php foreach ($categoriesList as $cat): ?>
+                                <li>
+                                    <a href="/blog?cat_id=<?= $cat['id'] ?>"> 
+                                        <?= $cat['name'] ?>
+                                    </a>
+                                    <span>(<?= $cat['total_posts'] ?>)</span>
+                                </li>
+                                <?php endforeach; ?>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="blog-block">
+                        <div class="recent-blog-widget">
+                            <h4>Recent News</h4>
+
+                            <?php foreach ($recentPosts as $r): ?>
+                            <div class="recent-blog-widget-item">
+                                <img src="../../blog-admin-capitalkaro/uploads/<?= $r['featured_image'] ?>" 
+                                     alt="<?= $r['title'] ?>">
+                                <div class="recent-blog-widget-item-title">
+                                    <span><?= date("M d, Y", strtotime($r['created_at'])) ?></span>
+                                    <a href="/blog-details/<?= $r['slug'] ?>"><?= $r['title'] ?></a>
                                 </div>
                             </div>
+                            <?php endforeach; ?>
+
                         </div>
+                    </div>
+
+                    <?php if (!empty($popularTagsList)): ?>
                         <div class="blog-block">
                             <div class="tag-widget">
                                 <h4>Popular Tags</h4>
-                                <ul>
-                                    <li class="active"><a href="#">Finance</a></li>
-                                    <li><a href="#">capitalkaro</a></li>
-                                    <li><a href="#">Investors</a></li>
-                                    <li><a href="#">Investors</a></li>
-                                    <li><a href="#">Credit Score</a></li>
+                                <ul class="tag-list-sidebar">
+                                    <?php foreach ($popularTagsList as $tag): ?>
+                                        <li>
+                                            <a href="/blog?tag=<?= urlencode($tag['slug']) ?>">
+                                                <?= htmlspecialchars($tag['name']) ?> (<?= $tag['total_posts'] ?>)
+                                            </a>
+                                        </li>
+                                    <?php endforeach; ?>
                                 </ul>
                             </div>
                         </div>
-                        <div class="blog-block mb-0">
-                            <div class="bolg-cta-widget">
-                                <div class="bolg-cta-widget-inner">
-                                    <img src="assets/images/favicon-2.png" alt="logo">
-                                    <h3>Advisory Specialists Premier Loan </h3>
-                                    <p class="lead"><a href="tel:+020-098-45611"><i class="flaticon-phone"></i>
-                                            +020-098-456 11</a>
-                                    </p>
-                                    <a href="contact-us" class="btn btn-primary">Get Started <i
-                                            class="flaticon-next"></i></a>
-                                </div>
-                            </div>
-                        </div>
+                    <?php endif; ?>
                     </div>
-                </div>
             </div>
+
         </div>
     </div>
-    <!-- team detail end  -->
-    <!-- cta one start -->
-    <section class="cta-one">
-        <div class="container">
-            <div class="row justify-content-between align-items-center">
-                <div class="col-xl-8 col-md-9 col-sm-9 col-9">
-                    <div class="cta-title">
-                        <h2>We build trust with our customers by
-                            combining creativity with tailored
-                            business loan solutions.</h2>
-                    </div>
-                    <a href="contact-us" class="btn btn-secondary">Contact us <i class="flaticon-next"></i></a>
-                </div>
-                <div class="col-md-3 col-sm-3 col-3">
-                    <img src="assets/images/cta-Logo.png" alt="logo">
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- cta one end -->
-    <!-- footer two start -->
-    <?php
-    include '_inc/footer.php';
-    include '_inc/footer-js.php';
-    ?>
-</body>
+</div>
 
+<?php include '_inc/footer.php'; ?>
+<?php include '_inc/footer-js.php'; ?>
+
+</body>
 </html>

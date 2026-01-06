@@ -4,10 +4,13 @@ Options -Indexes
 ErrorDocument 403 /views/403.php
 ErrorDocument 404 /views/404.php
 
-
 RewriteEngine On
+
+# SEO Friendly Tag URL
+# blog/tag/your-slug → views/tag.php?slug=your-slug
+RewriteRule ^blog/tag/([^/]+)/?$ views/tag.php?slug=$1 [QSA,L]
+
+# Existing working routing (unchanged)
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ index.php [QSA,L]
-
-

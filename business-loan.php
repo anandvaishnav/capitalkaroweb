@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php include_once '_data/data.php'; ?>
-
 <head>
+    <?php include '_inc/seo.php'; ?>  <!-- dynamic title is generated here -->
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo $site_name; ?> || Business Loan</title>
+
     <?php include '_inc/skin.php'; ?>
 </head>
+
 
 <body class="custom-cursor">
     <div class="custom-cursor-one"></div>
