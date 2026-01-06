@@ -9,7 +9,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <?php include '_inc/skin.php'; ?>
-
 </head>
 
 <body class="custom-cursor">
