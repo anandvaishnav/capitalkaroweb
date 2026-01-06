@@ -1,13 +1,46 @@
+<?php 
+include '_data/data.php';
+include '_data/db.php';
+
+// --------- PAGINATION SETTINGS ---------
+$postsPerPage = 12;
+$page = isset($_GET['page']) ? max(1, intval($_GET['page'])) : 1;
+$start = ($page - 1) * $postsPerPage;
+
+// --------- COUNT TOTAL POSTS ---------
+$totalStmt = $conn->prepare("SELECT COUNT(*) FROM posts WHERE status = 'published'");
+$totalStmt->execute();
+$totalPosts = $totalStmt->fetchColumn();
+$totalPages = ceil($totalPosts / $postsPerPage);
+
+// --------- FETCH POSTS ---------
+$stmt = $conn->prepare("
+    SELECT p.*, c.name AS category_name 
+    FROM posts p
+    LEFT JOIN categories c ON p.category_id = c.id
+    WHERE p.status = 'published'
+    ORDER BY p.id DESC
+    LIMIT :start, :limit
+");
+$stmt->bindValue(':start', $start, PDO::PARAM_INT);
+$stmt->bindValue(':limit', $postsPerPage, PDO::PARAM_INT);
+$stmt->execute();
+$posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
+?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo $site_name; ?> || Blog</title>
-    <?php
-   include '_inc/skin.php';
-   ?>
+    <?php include '_inc/seo.php'; ?>  <!-- ✅ Universal SEO Module -->
+    <?php include '_inc/skin.php'; ?> <!-- CSS -->
+    <style>
+        .blog-image img {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 
 <body class="custom-cursor">
